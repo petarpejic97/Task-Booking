@@ -1,0 +1,47 @@
+<div
+class="header-background"
+fxLayout="row"
+fxFlex=100>
+    <div 
+    class="content-wrapper"
+    fxLayout=row
+    fxFlex=90
+    fxFlexOffset=1.5em>
+        <div
+        fxLayout=column
+        class="back-arrow-container"
+        (click)=back()>
+            <span 
+            class="material-icons back-icon-white">
+                arrow_back
+            </span>
+        </div>
+        <div
+        fxFlexOffset=1.5em
+        fxLayout=column>
+            <span 
+            class="reserveAcc">{{componentTitle}}</span>
+            <div
+            fxFlexOffset=1.5em
+            class="stepper-wrapper">
+                <mat-horizontal-stepper 
+                class="mystepper2"
+                [linear]="isLinear" #stepper>
+                    <mat-step>
+                        
+                    </mat-step>
+                    <mat-step >
+                        
+                    </mat-step>
+                    <mat-step>
+                        
+                    </mat-step>
+                    <mat-step
+                    class="lastStep2">
+                        
+                    </mat-step>
+                </mat-horizontal-stepper>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,111 @@
+.background-item-pick-stay{
+    background-color: white;
+    padding: 0% 4%;
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.2);
+}
+.title-wrapper{
+    align-items: center;
+    justify-content: space-between;
+}
+.title, .info-icon-blue{
+    color: #4267B2;
+}
+.price-wrapper, .bed-wrapper{
+    align-items: center;
+}
+.advantage-container{
+    flex-wrap: wrap;
+}
+.advantage-wrap{
+    align-items: center;
+    display: inline-block;
+    margin-right: 2%;
+}
+.advantage-icon{
+    font-size: medium;
+}
+.advantage-text{
+    font-size: small;
+    white-space: nowrap;
+}
+.light{
+    width: 1.3em;
+}
+
+.propertyAndvantages{
+    align-items: center;
+}
+.advantage-icon{
+    font-size: medium;
+}
+.sumPrice{
+    font-size: large;
+    font-weight: bold;
+}
+.tip-wrapper{
+    align-items: center;
+}
+.btn-select-wrapper{
+    padding: 2% 0%;
+}
+.btn-select, .btn-room-selected, .btn-x{
+    height: 3em;
+    border-radius: 2px;
+    color: #4267B2;
+    border-color: #4267B2!important;
+}
+.button-icon-arrow-bottom{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%,-50%);
+}
+.btn-room-selected{
+    width: -webkit-fill-available;
+}
+.mat-stroked-button{
+    min-width: unset!important;
+}
+.btn-x{
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    margin-left: -1px;
+}
+.remove-item{
+    color: rgb(168, 21, 21);
+}
+.mat-menu-panel{
+    left: 1em;
+    width: 65vw;
+}
+@media only screen and (min-width: 768px){
+    .title,
+    div > div.price-wrapper > span,
+    div > div.bed-wrapper > div > div > span,
+    div > div:nth-child(4) > span,
+    .propertyAndvantages > span:nth-child(2),
+    div > div.tip-wrapper > span,
+    .normal-bold,
+    .sumPrice{
+        font-size: 1.1em;
+    }
+    .description{
+        font-size: 1em;
+    }
+    .mat-icon,
+    .material-icons{
+        font-size: 28px;
+    }
+    .advantage-wrap > span:nth-child(2){
+        font-size: inherit;
+    }
+    .light{
+        width: 1.5em;
+    }
+    .btn-select-wrapper > button {
+        height: 3.5em;
+    }
+    .btn-select, .btn-room-selected, .btn-x{
+        height: 3.5em;
+    }
+}

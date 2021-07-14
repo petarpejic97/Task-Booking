@@ -1,0 +1,80 @@
+.header-background{
+    background-color: var(--dark-blue);
+    height: 3.5em;
+}
+.content-wrapper{
+    align-items: center;
+}
+.back-icon-white,
+.accTitle{
+    color: white;
+}
+.tab-container > ::ng-deep .mat-tab-group > .mat-tab-header{
+    background-color: var(--dark-blue);
+}
+hr{
+    background-color: rgb(219, 219, 219); 
+    width: 100%; 
+    border: 0; 
+    height: 1px;
+    margin: 0;
+}
+::ng-deep .mat-tab-header-pagination{
+    display: none!important;
+}
+::ng-deep .mat-tab-label-content{
+    color: white!important;
+    font-size: 0.8em!important;
+}
+::ng-deep .mat-tab-label-container{
+    overflow: auto!important;
+}
+::ng-deep .mat-tab-label-container::-webkit-scrollbar {
+    display: none;
+  }
+::ng-deep .mat-tab-label{
+    height: 40px!important;
+    opacity: 1!important;
+    font-size: 1em!important;
+    padding: 0 0.8em!important;
+}
+::ng-deep .mat-tab-body-wrapper{
+    padding: 4%;
+}
+::ng-deep .mat-tab-group.mat-primary .mat-ink-bar {
+    background-color: #2a7efc;
+    height: 3px;
+}
+.facility-icon,
+.policy-icon{
+    font-size: 1.5em!important;
+}
+.facility-title,
+.policy-title{
+    font-weight: bold;
+}
+.health-list{
+    padding: 0!important;
+}
+.policies-subtitle{
+    font-size: 0.9em;
+}
+table{
+    border-collapse: collapse;
+    border: 1px solid rgb(219, 219, 219); ;
+}
+thead{
+    text-align: start;
+    background-color: rgb(219, 219, 219); ;
+}
+.free-text{
+    color: green;
+    font-weight: 500;
+}
+.table-title{
+    width: 60%;
+    text-align: start;
+}
+.normal-bold{
+    font-weight: bold;
+}

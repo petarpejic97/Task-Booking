@@ -1,0 +1,32 @@
+<div
+fxLayout=column
+class="user-comment">
+    <span>{{comment.text}}</span>
+    <div
+    fxLayout=row
+    class="info-container">
+        <div
+        class="user-photo-container">
+            <img 
+            class="user-photo"
+            src="{{comment.userPhoto}}" alt="">
+        </div>
+        <div
+        fxLayout=column
+        fxFlexOffset=2
+        fxFlex=90>
+            <span
+            class="small-bold">{{comment.user}}</span>
+            <div
+            fxLayout=row
+            class="state-info">
+                <img 
+                class="state-flag-image"
+                src="{{comment.stateFlag}}" alt="">
+                <span
+                fxFlexOffset=2>{{comment.state}}</span>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>

@@ -1,0 +1,57 @@
+
+<div
+fxLayout=column
+class="{{destinationContainer.className}}">
+    <div
+    fxLayout=row
+    fxFlexOffset=1.5em>
+        <span
+        fxFlexOffset=1.5em
+        class="normal-bold">{{destinationContainer.title}}</span>
+    </div>
+    <div
+    fxLayout=row
+    fxFlexOffset=0.5em>
+        <span 
+        fxFlexOffset=1.5em
+        fxFlex=90
+        class="description">{{destinationContainer.subtitle}}</span>
+    </div>
+    <div
+    fxLayout=row
+    class="images-container"
+    fxFlexOffset=0.5em>
+        <div
+        fxFlexOffset=1.5em
+        class="image-info-container"
+        *ngFor="let destination of destinationContainer.destinationAndTravelers" >
+            <div
+            *ngIf="destinationContainer.title === 'Popular destinations'"
+            class="discount">
+                Deals start <br>
+                at HRK {{destination.price}}
+            </div>
+            <img 
+            class="destination-img"
+            src="{{destination.photo}}" alt="destination.place_name">
+            <div
+            *ngIf="destinationContainer.title === 'Soak up some sun'">
+                <p class="small-bold">{{destination.city}}, {{destination.state}}</p>  
+            </div>
+            <div
+            *ngIf="destinationContainer.title === 'Popular destinations'">
+                <p class="small-bold">{{destination.city}} <br> {{destination.state}}</p>  
+            </div>
+    
+            <div
+            *ngIf="destinationContainer.title === 'Connect with other travelers' && destination">
+                <span 
+                class="small-bold">{{destination.connectType}}<br></span>    
+                <span 
+                class="description">{{destination.typeDescription}}<br></span>    
+                <span 
+                class="description">{{destination.numTravels}}</span>  
+            </div>
+        </div>
+    </div>
+</div>

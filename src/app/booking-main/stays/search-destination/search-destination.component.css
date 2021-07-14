@@ -1,0 +1,82 @@
+.header-background{
+    background-color: var(--dark-blue);
+    color: black;
+}
+.background{
+    width: 100%;
+    height: 100%;
+}
+.content-wrapper{
+    align-items: center;
+    min-height: 3rem;
+}
+.arrow-icon-wrapper{
+    margin-right: 1.5em;
+}
+.arrow-back-icon-white{
+    color: white;
+}
+.location-content-wrapper{
+    margin-bottom: 1em;
+}
+.example-form {
+    min-width: 150px;
+    width: 100%;
+}
+.example-full-width {
+    width: 100%;
+}
+::ng-deep .mat-form-field-flex{
+    background-color: white;
+}
+::ng-deep body div.header-background > div > form > mat-form-field > div > div.mat-form-field-flex.ng-tns-c159-0 > div{
+    padding: 0.4375em 0;
+}
+
+::ng-deep .mat-form-field-appearance-legacy .mat-form-field-wrapper{
+    padding: 0!important;
+}
+::ng-deep .mat-form-field-underline{
+    display: none!important
+}
+::ng-deep div.header-background > div > form > mat-form-field > div > div.mat-form-field-flex> div.mat-form-field-infix{
+    border: 0.5em solid transparent;
+}
+.current-location-wrapper{
+    background-color: white;
+}
+.around-curr-loc, .gps-icon-blue{
+    color: rgb(0, 119, 255);
+}
+.gps-icon-blue{
+    font-size: 1.8em;
+}
+.around-curr-loc,
+.city{
+    font-size: 1em;
+}
+.example-option-img{
+    object-fit: cover;
+    border-radius: 2px;
+}
+::ng-deep .mat-option{
+    line-height:  normal!important;
+    height: 60px!important;
+}
+
+::ng-deep .mat-autocomplete-panel{
+    padding: 10px 0!important;
+    overflow: hidden!important;
+    max-height: unset!important;
+}
+::ng-deep .mat-autocomplete-panel:not([class*=mat-elevation-z]){
+    box-shadow: none!important;
+    margin-top: 0.5em!important;
+    border-radius: none!important;
+    padding-bottom: 1em!important;
+    padding-top: 0!important;
+}
+
+::ng-deep .mat-option-text {
+    height: -webkit-fill-available;
+}

@@ -1,0 +1,162 @@
+.example-container {
+    width: 100%;
+}
+.example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.mat-drawer-container-has-open{
+    height: 100%;
+}
+.itemoptions,
+.mainheader,
+.background{
+    width: 100%;
+}
+.example-sidenav {
+    padding: 1em 2em;
+    width: 80%;
+}
+.itemoptions{
+    margin-top: -1px;
+}
+.background{
+    background-color: rgb(219, 219, 219);
+}
+.second-header-wrapper{
+    justify-content: space-between;
+}
+.read-more{
+    color: #0346a5;
+}
+.search-container{
+    margin-right: 1.5em;
+}
+.search-box, 
+.checkbox-background,
+.todays-deals-box,
+.soak-sun-box,
+.finish-booking-container{
+    background-color: white;
+}
+::ng-deep .mat-checkbox-layout{
+    width: 100%;
+    justify-content: space-between;
+}
+::ng-deep .mat-checkbox-inner-container{
+    margin-right: 8px!important;
+}
+::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+    background-color: #0346a5;
+}
+.mat-checkbox{
+    margin-bottom: 1.5em;
+}
+.mat-expansion-panel:not([class*=mat-elevation-z]){
+    box-shadow: none;
+}
+.mat-expansion-panel, .mat-raised-button{
+    border-radius: 0;
+}
+.mat-expansion-panel-header{
+    height: 3em;
+}
+.img-todays-deal{
+    object-fit: cover;
+    border-radius: 2px;
+    width: 65%;
+    height: 9em;
+}
+.date-count{
+    margin-bottom: 5%;
+}
+.example-button-container{
+    z-index: 2;
+    right: 5%;
+    bottom: 5%;
+    position: fixed;
+}
+/* Font- size*/
+.mat-expansion-panel-header-title{
+    font-size: 0.95em;
+}
+::ng-deep div.search-box > div > div:nth-child(1) > span{
+    font-size: 1.1em;
+}
+.image-info-container{
+    position: relative;
+ }
+.finish-accomodation-image{
+    width: 100%;
+    height: 10em;
+    object-fit: cover;
+}
+.close-icon{
+    font-size: 2em;
+    color: grey;
+}
+.finish-title-container{
+    padding: 4%;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottom-finish-container{
+    padding: 4%;
+    justify-content: space-between;
+}
+.day-date{
+    text-align: center;
+}
+.hr-date{
+    margin: 0 10%;
+}
+.image-rate-container{
+    position: relative;
+}
+.rate-back{
+    position: absolute;
+    width: 2em;
+    background-color: #0346a5;
+    border-radius: 6px;
+    border-bottom-left-radius: 0;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3em 0;
+    bottom: 10%;
+    left: 5%;
+}
+.rate{
+    color: white;
+}
+@media only screen and (min-width: 768px) {
+    .example-sidenav {
+        width: 50%;
+    }
+    .mat-expansion-panel-header{
+        height: 3.5em;
+    }
+    .mat-expansion-panel-header-title{
+        font-size: 1.15em;
+    }
+    ::ng-deep div.search-box > div > div:nth-child(1) > span{
+        font-size: 1.3em;
+    }
+    ::ng-deep div.search-box > div > div:nth-child(2) > p{
+        margin-top: 0.5em;
+        font-size: 1.1em;
+    }
+    ::ng-deep #mat-checkbox-1 > label > span{
+        font-size: 1.1em;
+    }
+    div.todays-deals-box > div > div:nth-child(1) > span{
+        font-size: 1.1em;
+    }
+     div.todays-deals-box > div > div:nth-child(3) > span,
+     div.todays-deals-box > div > div:nth-child(4) > span{
+        font-size: 1em;
+    }
+  }

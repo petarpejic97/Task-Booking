@@ -1,0 +1,856 @@
+<app-header-accomodation-detail
+class="header-accomodation-detail">
+</app-header-accomodation-detail>
+<div
+class="search-bar-container"
+fxLayout=row
+[style.top]="toggleSearchBar ? '-1px' : '-10%'"
+*ngIf=scrolled>
+    <div
+    fxFlexOffset=1.5em
+    fxLayout=row
+    fxFlex=92
+    class="white-background-wrapper">
+        <span
+        class="material-icons-outlined grey-search-icon">
+            search
+        </span>
+        <label 
+        fxFlexOffset=2
+        class="grey-property-search">
+            Search in this property
+        </label>
+    </div>
+</div>
+<div
+fxLayout=column
+class="backgroung bg-color"
+fxLayoutGap=5>
+    <div
+    fxLayout=100
+    class="expansion-wrapper">
+        <mat-expansion-panel
+        (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+            <mat-panel-title>
+            <b>Coronavirus (COVID-19) support</b>
+            </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p>Check fot travel restrictions. Travel might only be permitted for certain purposes, and touristic travel in particular my not be allowed.</p>
+            <p class="read-more"><b>Read more</b></p>
+        </mat-expansion-panel>
+    </div>
+    <div
+    fxFlexOffset=0.5em
+    class="image-title-rate-container"
+    fxLayout=column>
+        <div class="img-wrapper">
+            <div
+            class="photo1">
+                <img 
+                src="{{accomodation.photos[0]}}" 
+                alt="">
+            </div>
+            <div
+            class="photo2">
+                <img 
+                src="{{accomodation.photos[1]}}" 
+                alt="">
+            </div>
+            <div
+            class="photo3">
+                <img 
+                src="{{accomodation.photos[2]}}" 
+                alt="">
+            </div>
+            <div
+            class="photo4">
+                <img 
+                src="{{accomodation.photos[3]}}" 
+                alt="">
+            </div>
+            <div
+            class="photo5">
+                <span
+                class="text-rest-images">+15</span>
+                <img 
+                src="{{accomodation.photos[4]}}" 
+                alt="">
+            </div>
+        </div>
+        <div
+        class=title-rate-container
+        fxLayout=row>
+            <span
+            fxFlexOffset=1.5em
+            class="title"
+            fxFlex=100><b>{{accomodation.title}} </b> </span>
+            <div
+            class="rate-back"
+            fxFlexOffset=1.5em>
+                <span 
+                class="rate">{{accomodation.rate}}</span>
+            </div>        
+        </div>
+        <div
+        fxLayout=row
+        class="star-container-100">
+            <div
+            class="star-container"
+            fxFlexOffset=1.5em>
+            <i class="material-icons material-icons-round yellow-icon">star_rate</i>
+            <i class="material-icons material-icons-round yellow-icon">star_rate</i>
+            <i class="material-icons material-icons-round yellow-icon">star_rate</i>
+            <i class="material-icons material-icons-round yellow-icon">star_rate</i>
+            <i class="material-icons material-icons-round yellow-icon">star_rate</i>
+            <i class="material-icons material-icons-round thumb-up">thumb_up</i>
+            </div>
+        </div>
+    </div>
+    <div
+    fxFlexOffset=2
+    fxFlex=20
+    fxFlexAlign=end
+    fxLayout=row
+    class=information-container>
+        <div
+        class=information>
+            <span class="normal-bold">Price for {{numberOfNights}} nights, {{tripDetail.adultsNumber}} adult, {{tripDetail.childrenNumber}} children</span>
+            <span class="price">€ {{sumPrice}}</span>
+            <span class="description">Includes taxes and charges</span>
+        </div>
+    </div>
+    <div
+    class="covid-effect-container"
+    fxLayout=column
+    fxFlexOffset=2>
+        <div
+        fxLayout=row>
+            <mat-icon 
+            class="material-icons info-icon-white">
+                help_outline
+            </mat-icon >
+            <span
+            class="covid-effect-text"
+            fxFlexOffset=1.5em>In response to the coronavirus (COVID-19), additional safety and 
+                sanitation measures are currently in effect at this property.
+            </span>
+        </div>
+    </div>
+    <div
+    class="whole-apartment-container"
+    fxLayout=column
+    fxFlexOffset=2>
+        <div
+        fxLayout=row>
+            <mat-icon 
+            class="material-icons done-icon-green">
+                done
+            </mat-icon >
+            <div 
+            fxFlexOffset=1.5em
+            fxLayout=column>
+                <span
+                class="whole-apartment normal-bold">Whole apartment
+                </span>
+                <span
+                class="all-privacy"
+                fxFlexOffset=1em>
+                    All the privacy of home
+                </span>
+            </div>
+        </div>
+    </div>
+    <div
+    class="map-container"
+    fxLayout=column
+    fxFlexOffset=2>
+        <div
+        fxFlex=25
+        class="map">
+            <iframe 
+            class="city-map"
+            fxFlex=100
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92587.0938233157!2d16.3790436678709!3d43.515962824085356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13355dfc6bbcf517%3A0xa1798ff631b49f98!2s21000%2C%20Split!5e0!3m2!1shr!2shr!4v1606739035514!5m2!1shr!2shr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>   
+        </div>
+        <div
+        class="address-conteiner"
+        fxFlexOffset=1.5em
+        fxLayout=row>
+            <span 
+            fxFlexOffset=1.5em
+            fxFlex=92>{{accomodation.address}}, {{accomodation.city}}, Croatia {{accomodation.distanceToCenter}} <span>9.6- Families love this exceptional location!</span></span>
+        </div>
+    </div>
+    <div
+    class="sign-in-container"
+    fxLayout=column
+    fxLayoutGap=1em
+    fxFlexOffset=2>
+        <div
+        class="title-and-close"
+        fxFlexOffset=1.5em
+        fxLayout=row>
+            <span
+            fxFlexOffset=1.5em
+            class="whole-apartment normal-bold">Sign in to save at this property
+            </span>
+            <mat-icon 
+            fxFlexOffset=1.5em
+            class="material-icons close-icon-grey">
+                close
+            </mat-icon >
+        </div>
+        <div
+        class="enjoy-discounts">
+            <span
+            fxFlexOffset=1.5em
+            fxFlex=100>Enjoy discounts at thousands of properties-including this one-with Genius membership!</span>
+        </div>
+        <div>
+            <span
+            fxFlexOffset=1.5em
+            class="sign-in"><b>Sign in</b></span>
+        </div>
+        <hr>
+        <div
+        fxLayout=row>
+            <div
+            class="loyality-program"
+            fxFlexOffset=1.5em
+            fxFlex=100>
+                <span 
+                class="description">Booking.com's loyality program</span>
+                <span 
+                class="genius"><b>Genius</b></span>
+            </div>
+        </div>
+    </div>
+    <div
+    fxFlexOffset=2
+    class="check-in-out-conteiner"
+    fxLayout=row>
+        <div
+        class="check-in-conteiner"
+        fxFlexOffset=2
+        fxFlex=45.5
+        fxLayout=column>
+            <span>Check-in Date</span>
+            <div
+            class=check-in-date
+            fxLayout=row>
+                <span
+                fxFlexOffset=0.5em
+                class="day-date">{{fullStartDate.day}}</span>
+                <div
+                fxFlexOffset=2
+                fxLayout=column>
+                    <span
+                    class="day">{{fullStartDate.dayName}}</span>
+                    <span
+                    class="month-and-year">{{fullStartDate.month}} {{fullStartDate.year}}</span>
+                </div>
+            </div>
+        </div>
+        <div
+        class="check-out-conteiner"
+        fxFlexOffset=1.5em
+        fxFlex=45.5
+        fxLayout=column>
+            <span>Check-out Date</span>
+            <div
+            class=check-out-date
+            fxLayout=row>
+                <span
+                fxFlexOffset=0.5em
+                class="day-date">{{fullEndDate.day}}</span>
+                <div
+                fxFlexOffset=2
+                fxLayout=column>
+                    <span
+                    class="day">{{fullEndDate.dayName}}</span>
+                    <span
+                    class="month-and-year">{{fullEndDate.month}} {{fullEndDate.year}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div
+    fxFlexOffset=1.5em
+    fxLayout=column
+    class="travel-safely-container">
+        <div
+        fxLayout=row>
+            <span
+            fxFlex=2em>
+                <img 
+                class="health-icon"
+                src="data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FwYV8xIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGc+PGc+PGc+PHBhdGggZD0ibTQ3NC44NTggMTA0LjZjLTEuNjE2LTEwLjg3LTguOTE3LTIwLjIzLTE5LjA1NC0yNC40MjhsLTE4Ny43ODgtNzcuNzY3Yy03Ljc0OS0zLjIwNy0xNi4yODMtMy4yMDctMjQuMDMyIDBsLTE4Ny43ODggNzcuNzY3Yy0xMC4xMzcgNC4xOTgtMTcuNDM4IDEzLjU1OC0xOS4wNTQgMjQuNDI4LTMuOTQzIDI2LjUyNi0xMC41NTMgOTYuNzA2IDEzLjE1MyAxNzUuMjggMTMuMTg0IDQzLjY5NyAzMy44NDMgODMuOTExIDYxLjQwMyAxMTkuNTI0IDMzLjA4NCA0Mi43NTEgNzYuNDk4IDc5LjMwOCAxMjkuMDM3IDEwOC42NTMgNC43MDggMi42MjggOS45ODYgMy45NDMgMTUuMjY1IDMuOTQzIDUuMjc4IDAgMTAuNTU3LTEuMzE1IDE1LjI2NS0zLjk0NCA1Mi41MzktMjkuMzQ1IDk1Ljk1My02NS45MDIgMTI5LjAzNy0xMDguNjUzIDI3LjU1OS0zNS42MTMgNDguMjE4LTc1LjgyNyA2MS40MDItMTE5LjUyNCAyMy43MDctNzguNTczIDE3LjA5Ni0xNDguNzUzIDEzLjE1NC0xNzUuMjc5em0tMjcuNDk3IDE3MC45NTFjLTI4LjE2OCA5My4zNTktODkuODcyIDE2Ny4xODMtMTgzLjQwMSAyMTkuNDI0LTQuOTA3IDIuNzQxLTExLjAwNyAyLjc0Mi0xNS45MTcgMC05My41My01Mi4yNC0xNTUuMjM2LTEyNi4wNjUtMTgzLjQwMy0yMTkuNDI0LTIyLjgzMS03NS42NzQtMTYuNDcxLTE0My4yMjEtMTIuNjc3LTE2OC43NDkuODQ2LTUuNjkyIDQuNjY1LTEwLjU5MiA5Ljk2Ni0xMi43ODZsMTg3Ljc4OC03Ny43NjdjMi4wMjYtLjgzOSA0LjE1NS0xLjI1OSA2LjI4NC0xLjI1OSAyLjEyOCAwIDQuMjU4LjQyIDYuMjg0IDEuMjU5bDE4Ny43ODggNzcuNzY3YzUuMzAxIDIuMTk1IDkuMTE5IDcuMDk0IDkuOTY0IDEyLjc4NiAzLjc5NSAyNS41MjkgMTAuMTU0IDkzLjA3Ni0xMi42NzYgMTY4Ljc0OXoiLz48cGF0aCBkPSJtNDE3LjAwNiAxMTUuMzc3LTczLjM5Ny0yOS45NTRjLTMuODMzLTEuNTYyLTguMjA1LjI3NS05Ljc2NyA0LjEwNnMuMjc1IDguMjA0IDQuMTA2IDkuNzY3bDczLjM5NyAyOS45NTRjMy43NjggMS41MzcgNi40NzkgNC45NTEgNy4wNzYgOC45MDggMy4wMzEgMjAuMDk1IDguMTExIDczLjI2Ni0xMC4xMjggMTMyLjg0MS0yMi40OTkgNzMuNDg5LTcxLjgxNSAxMzEuNjE4LTE0Ni41NzcgMTcyLjc3MS0zLjUyNCAxLjkzOS03LjkwNCAxLjkzOS0xMS40MjggMC03NC43NjMtNDEuMTUzLTEyNC4wNzktOTkuMjgxLTE0Ni41NzgtMTcyLjc3MS0xOC4yNDEtNTkuNTc0LTEzLjE2MS0xMTIuNzQ1LTEwLjEzLTEzMi44NDEuNTk3LTMuOTU4IDMuMzA4LTcuMzcxIDcuMDc3LTguOTA4bDE1MC44MjYtNjEuNTUzYzIuODctMS4xNzIgNi4xNjYtMS4xNzMgOS4wMzcgMGw0NS4yOTggMTguNDg3YzMuODMyIDEuNTYyIDguMjA1LS4yNzYgOS43NjctNC4xMDYgMS41NjMtMy44MzEtLjI3NS04LjIwNC00LjEwNi05Ljc2N2wtNDUuMjk5LTE4LjQ4N2MtNi41NjUtMi42NzktMTMuNzk0LTIuNjc3LTIwLjM1OSAwbC0xNTAuODI2IDYxLjU1M2MtOC42MzEgMy41MjItMTQuODUxIDExLjM5Ni0xNi4yMzEgMjAuNTQ3LTMuMTgzIDIxLjEwNy04LjUyMSA3Ni45NDkgMTAuNjE4IDEzOS40NjEgMTAuNjQ3IDM0Ljc3NyAyNy4zMyA2Ni43ODEgNDkuNTg2IDk1LjEyMiAyNi42OTkgMzMuOTk5IDYxLjcyMSA2My4wNjQgMTA0LjA5NCA4Ni4zODggMy45OTEgMi4xOTcgOC40NjQgMy4yOTUgMTIuOTM5IDMuMjk1IDQuNDc0LS4wMDEgOC45NDktMS4wOTggMTIuOTM5LTMuMjk1IDQyLjM3NC0yMy4zMjMgNzcuMzk2LTUyLjM4OSAxMDQuMDk0LTg2LjM4OCAyMi4yNTUtMjguMzQxIDM4LjkzOC02MC4zNDYgNDkuNTg1LTk1LjEyMiAxOS4xMzktNjIuNTEzIDEzLjgwMS0xMTguMzU1IDEwLjYxNy0xMzkuNDYxLTEuMzgtOS4xNTItNy41OTktMTcuMDI1LTE2LjIzLTIwLjU0N3oiLz48cGF0aCBkPSJtMjQxLjA2OSAzNDYuODU1aDI5Ljg2M2MxMC42OSAwIDE5LjM4OC04LjY1NiAxOS4zODgtMTkuMjk2di0zMy4xMTZjMC0yLjM3OCAxLjk3NS00LjMxMyA0LjQwNC00LjMxM2gzMy4zNzZjMTAuNjkxIDAgMTkuMzg4LTguNjU2IDE5LjM4OC0xOS4yOTV2LTI5LjYzYzAtMTAuNjQtOC42OTctMTkuMjk2LTE5LjM4OC0xOS4yOTZoLTMzLjM3NmMtMi40MjkgMC00LjQwNC0xLjkzNC00LjQwNC00LjMxMnYtMzMuMTE3YzAtMTAuNjM5LTguNjk3LTE5LjI5NS0xOS4zODgtMTkuMjk1aC0yOS44NjNjLTEwLjY5IDAtMTkuMzg4IDguNjU1LTE5LjM4OCAxOS4yOTV2MzMuMTE3YzAgMi4zNzctMS45NzYgNC4zMTItNC40MDQgNC4zMTJoLTMzLjM3N2MtMTAuNjkgMC0xOS4zODggOC42NTYtMTkuMzg4IDE5LjI5NnYyOS42M2MwIDkuNjU2IDcuMjQ4IDE3Ljg4MSAxNi44NTkgMTkuMTMyIDQuMTA1LjU0IDcuODYxLTIuMzYgOC4zOTYtNi40NjIuNTM0LTQuMTAzLTIuMzYtNy44NjEtNi40NjItOC4zOTYtMi4xNzEtLjI4My0zLjgwOS0yLjEyLTMuODA5LTQuMjczdi0yOS42M2MwLTIuMzc4IDEuOTc2LTQuMzEzIDQuNDA0LTQuMzEzaDMzLjM3N2MxMC42OSAwIDE5LjM4OC04LjY1NiAxOS4zODgtMTkuMjk1di0zMy4xMTdjMC0yLjM3NyAxLjk3Ni00LjMxMiA0LjQwNC00LjMxMmgyOS44NjNjMi40MjkgMCA0LjQwNCAxLjkzNCA0LjQwNCA0LjMxMnYzMy4xMTdjMCAxMC42MzkgOC42OTcgMTkuMjk1IDE5LjM4NyAxOS4yOTVoMzMuMzc2YzIuNDI5IDAgNC40MDUgMS45MzQgNC40MDUgNC4zMTN2MjkuNjNjMCAyLjM3Ny0xLjk3NiA0LjMxMi00LjQwNSA0LjMxMmgtMzMuMzc2Yy0xMC42OSAwLTE5LjM4NyA4LjY1Ni0xOS4zODcgMTkuMjk2djMzLjExNmMwIDIuMzc4LTEuOTc1IDQuMzEzLTQuNDA0IDQuMzEzaC0yOS44NjNjLTIuNDI4IDAtNC40MDQtMS45MzQtNC40MDQtNC4zMTN2LTMzLjExNmMwLTEwLjYzOS04LjY5Ny0xOS4yOTYtMTkuMzg4LTE5LjI5Ni00LjEzOCAwLTcuNDkyIDMuMzU0LTcuNDkyIDcuNDkyczMuMzU0IDcuNDkyIDcuNDkyIDcuNDkyYzIuNDI4IDAgNC40MDQgMS45MzQgNC40MDQgNC4zMTN2MzMuMTE2Yy4wMDEgMTAuNjM4IDguNjk4IDE5LjI5NCAxOS4zODggMTkuMjk0eiIvPjwvZz48L2c+PC9nPjwvc3ZnPg==" />
+            </span>
+            <div
+            class="travel-safely-text"
+            fxFlexOffset=1.5em
+            fxLayout=column>
+                <span
+                class=travel-safely-title>Travel safely</span>
+                <span
+                fxFlexOffset=0.5em>Here you'll find all the measures this property has taken to protect yout health</span>
+                <span
+                fxFlexOffset=1em
+                class="all-details"
+                (click)="openSeeMoreAbout('2')">See all details</span>
+            </div>
+        </div>
+    </div>
+    <div
+    class=comments-conteiner
+    fxFlexOffset=1.5em>
+        <div
+        fxLayout=row>
+            <div
+            fxFlex=100
+            fxLayout=column>
+                <div
+                fxLayout=row
+                class="rate-container">
+                    <div>
+                        <div
+                        class="rate-back second-rate-back">
+                            <span 
+                            class="rate">{{accomodation.rate}}</span>
+                        </div>     
+                    </div>
+                    <div
+                    fxLayout=column>
+                        <span 
+                        class="normal-bold excellent-word">Excellent</span>
+                        <span
+                        class="review-number small-bold"
+                        fxFlexOffset=0.5em>See all 1976 reviews</span>
+                    </div>
+                </div>
+                <hr>
+                <span
+                class="comments-title"
+                fxFlexOffset=1.5em>1465 Guests Had Great Experiences</span>
+                <div
+                class="users-comments"
+                *ngFor="let comment of comments">
+                    <app-users-comments-item
+                    [comment]=comment></app-users-comments-item>
+                </div> 
+                <span
+                class="see-all-reviews"><b>See all 1976 reviews</b></span>
+            </div>
+        </div>
+    </div>
+    <div
+    class="travel-asking"
+    fxFlexOffset=2
+    fxLayout=column>
+        <div
+        fxFlexOffset=1.5em
+        fxLayout=row>
+            <span
+            fxFlexOffset=1.5em
+            fxFlex=92
+            class="travelers-asking">Travelers are asking</span>
+        </div>
+        <div
+        *ngFor="let ask of asks">
+            <app-travelers-asking-item
+            class="ask-item"
+            fxFlexOffset=1.5em
+            fxFlex=92
+            [ask]="ask">
+            </app-travelers-asking-item>
+        </div>
+        <div
+        fxLayout=row
+        fxFlex=92
+        class="see-all-qeustions-container">
+            <span
+            fxFlexOffset=1.5em
+            class="normal-bold see-all-questions">See all 5 questions</span>
+            <span class="material-icons arrow-right-icon-grey">
+                keyboard_arrow_right
+            </span>
+        </div>
+        <hr>
+        <div
+        fxFlexOffset=1.5em
+        fxLayout=column
+        class="button-ask-question-container">    
+            <div
+            fxLayout=row>
+                <button 
+                fxFlexOffset=1.5em
+                fxFlex=92
+                mat-stroked-button 
+                class="btn-ask-question">Ask a question</button>
+            </div>
+            <div
+            fxFlexOffset=2
+            fxLayout=row
+            class="replies-time">
+                <span
+                class="description">This property usually replies whitin a few days</span>
+            </div>
+        </div>
+    </div>
+    <div
+    fxLayout=column
+    fxFlexOffset=2
+    class="descrption-container">
+        <div
+        fxLayout=row>
+            <span
+            fxFlex=92
+            class="description-part-title">Description</span>
+        </div>
+        <div
+        fxFlexOffset=1.5em
+        fxLayout=row>
+            <span
+            fxFlex=92
+            class="description-part-text">
+            Offering a beach area and an indoor pool, our apartment is 1.6
+            mi from Split's UNESCO-protected Diocletian's Palace. It offers
+            a luxurious Spa Center, while the outdoor pool is...</span>
+        </div>
+        <div
+        fxFlexOffset=1.5em
+        fxLayout=row>
+            <span
+            fxFlex=92
+            class="normal-bold read-full-description"
+            (click)="openSeeMoreAbout('0')">Read full description</span>
+        </div>
+    </div>
+    <div
+    fxLayout=column
+    fxFlexOffset=1.5em
+    class="facilities-container">
+        <div
+        fxLayout=row
+        class="facilities-title">
+            <span>Facilities</span>
+        </div>
+        <div
+        fxLayout=row
+        fxFlexOffset=1.5em
+        class="facilities-description">
+            <span>Chocolate/Cookines, Fire extinguishers, Fruit, Body wrap, Currency exchange, Bicycle parking ...</span>
+        </div>
+        <div
+        fxLayout=row
+        fxFlexOffset=1.5em>
+            <hr
+            fxFlex=100>    
+        </div>
+        <div
+        fxLayout=row
+        fxFlexOffset=1.5em>
+            <span
+            class="small-bold">Temporarily closed</span>    
+        </div>
+        <div
+        fxFlexOffset=1.5em
+        *ngFor="let temporarilyClosed of temporarilyClosedList">
+            <app-temporarily-closed-item
+            [temporarilyClosed]=temporarilyClosed></app-temporarily-closed-item>
+        </div>
+        <div
+        fxFlexOffset=1.5em
+        fxLayout=row>
+            <span
+            class="see-all-facilities"
+            (click)="openSeeMoreAbout('1')">See all facilities</span>
+        </div>
+    </div>
+    <div
+    fxFlexOffset=2
+    class="sustainability-container">
+        <div
+        fxLayout=column>    
+            <div
+            fxLayout=row>
+                <span
+                class="sustainability-title">Sustainability initiatives</span>
+            </div>
+            <div
+            fxFlexOffset=1.5em
+            fxLayout=row>
+                <img 
+                class="sustainability-image"
+                src="https://www.flaticon.com/svg/static/icons/svg/605/605863.svg" alt="">
+                <span
+                fxFlexOffset=1.5em>Alternative transport options</span>
+            </div>
+            <div
+            fxFlexOffset=1em
+            fxLayout=row>
+                <img 
+                class="sustainability-image"
+                src="https://www.flaticon.com/svg/static/icons/svg/2639/2639268.svg" alt="">
+                <span
+                fxFlexOffset=1.5em>water-saving options</span>
+            </div>
+            <div
+            fxFlexOffset=1.5em
+            fxLayout=row>
+                <img 
+                class="sustainability-image"
+                src="https://www.flaticon.com/svg/static/icons/svg/352/352341.svg" alt="">
+                <span
+                fxFlexOffset=1.5em>Energy efficiency</span>
+            </div>
+            <div
+            fxFlexOffset=1.5em
+            fxLayout=row>
+                <span
+                class="see-details"
+                (click)="openSeeMoreAbout('3')">See details
+                </span>
+            </div>
+        </div>
+    </div>
+    <div
+    class="policies-container"
+    fxFlexOffset=2
+    fxLayout=column>
+        <div
+        fxLayout=row>
+            <span
+            class="policies-title">Policies</span>
+        </div>
+        <div
+        fxFlexOffset=1em
+        fxLayout=row>
+            <div
+            fxLayout=column>
+                <span>Check-in from 15:00</span>
+                <span>Check-out until 12:00</span>
+            </div>
+        </div>
+        <div
+        fxFlexOffset=1em
+        fxLayout=row>
+            <span
+            class="free">FREE</span>
+            <span
+            fxFlexOffset=1.5em>WiFi is available in all areas and is free of charge.</span>
+        </div>
+        <div
+        fxFlexOffset=1.5em
+        fxLayout=row>
+            <span>No booking or credit card fees</span>
+        </div>
+        <div
+        fxLayout=row
+        fxFlexOffset=1.5em>
+            <span
+            class="see-all-policies"
+            (click)="openSeeMoreAbout('4')">See policies of the property</span>
+        </div>
+    </div>
+    <div
+    class="children-extra-beds-container"
+    fxFlexOffset=2
+    fxLayout=column>
+        <div
+        fxLayout=row>
+            <span
+            class="children-extra-beds-title"
+            (click)="openSeeMoreAbout('5')">Childrens and extra beds</span>
+        </div>
+        <div
+        fxFlexOffset=1em
+        fxLayout=row>
+            <div
+            fxLayout=column>
+                <span>Children of all ages are welcome.</span>
+            </div>
+        </div>
+        <div
+        fxLayout=row
+        fxFlexOffset=1.5em>
+            <span
+            class="see-full-policies"
+            (click)="openSeeMoreAbout('6')">See full policies</span>
+        </div>
+    </div>
+    <div
+    class="important-information-container"
+    fxFlexOffset=2
+    fxLayout=column>
+        <div
+        fxFlexOffset=1.5em
+        fxLayout=row>
+            <span
+            class="important-information-title">Important Information</span>
+        </div>
+        <div
+        fxFlexOffset=1.5em
+        fxLayout=row>
+            <div
+            fxLayout=column>
+                <span>Indoor pool will be temporarily closed until August 31 st.</span>
+            </div>
+        </div>
+        <div
+        fxLayout=row
+        fxFlexOffset=1.5em>
+            <span
+            class="read-more"
+            (click)="openSeeMoreAbout('7')">Read more</span>
+        </div>
+    </div>
+    <div
+    fxFlexOffset=1.5em
+    fxLayout=column
+    class="nearby-place-wrapper">
+        <div
+        fxLayout=row
+        class="nearby-place-title-wrapper">
+            <span
+            class="nearby-place-title">
+            Places of Interest Nearby *
+            </span>
+            <img 
+            class="museum-icon"
+            src="https://www.flaticon.com/svg/static/icons/svg/535/535630.svg" alt="">
+        </div>
+        <div
+        *ngFor="let nearbyPlace of nearbyPlaces">
+            <app-nearby-places-item
+            fxFlex=100
+            [nearbyPlace]="nearbyPlace"></app-nearby-places-item>
+        </div>
+    </div>
+    <hr>
+    <div
+    fxLayout=column
+    class="transport-information-container">
+        <div
+        class="transport-information-title-wrapper"
+        fxLayout=row>
+            <span
+            class="transport-information-title">Transport Information *</span>
+            <img 
+            class="transport-information-icon"
+            src="https://www.flaticon.com/svg/static/icons/svg/905/905535.svg" 
+            alt="">
+        </div>
+        <div
+        fxFlexOffset=1.5em>
+            <span
+            class="normal-bold">Parking available</span>
+        </div>
+        <div
+        fxFlexOffset=1.5em>
+            <span
+            class="normal-bold">Airport shuttle</span>
+        </div>
+    </div>
+    <hr>
+    <div
+    fxLayout=column
+    class="around-property-container">
+        <div
+        class="around-property-title-wrapper"
+        fxLayout=row>
+            <span
+                class="around-property-title">Around the Property *</span>
+            <img 
+            class="around-property-icon"
+            src="https://www.flaticon.com/svg/static/icons/svg/2149/2149109.svg" 
+            alt="">
+        </div>
+        <div
+        fxFlexOffset=2>
+            <div
+            fxLayout=column>
+                <div
+                fxLayout=row>
+                    <span
+                    class="normal-bold">River</span>
+                </div>
+                
+                <div
+                fxLayout=row
+                class="object-and-distance">
+                    <span>Cetina</span>
+                    <span
+                    class="distance-property">24.9 mi</span>
+                </div>
+            </div>
+        </div>
+        <div
+        fxFlexOffset=2>
+            <div
+            fxLayout=column>
+            <div
+            fxLayout=row>
+                <span
+                class="normal-bold">Restaurant</span>
+            </div>
+                <div
+                fxLayout=row
+                class="object-and-distance">
+                    <span>The Caper Grill Restaurant</span>
+                    <span
+                    class="distance-property"> 160 ft</span>
+                </div>
+                <div
+                fxLayout=row
+                class="object-and-distance">
+                    <span>The Fig Leaf Restaurant</span>
+                    <span
+                    class="distance-property">
+                        160 ft
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div
+        fxFlexOffset=2>
+            <div
+            fxLayout=column>
+                <div
+                fxLayout=row>
+                    <span
+                    class="normal-bold">Cafe/Bar</span>
+                </div>
+                <div
+                fxLayout=row
+                class="object-and-distance">
+                    <span>The Door Bar</span>
+                    <span
+                    class="distance-property">160 ft</span>
+                </div>
+            </div>
+        </div>
+        <div
+        fxFlexOffset=2>
+            <div
+            fxLayout=column>
+                <div
+                fxLayout=row>
+                    <span
+                    class="normal-bold">Ocean/Sea</span>
+                </div>
+                <div
+                fxLayout=row
+                class="object-and-distance">
+                    <span>Adriatic Sea</span>
+                    <span
+                    class="distance-property">450 ft</span>
+                </div>
+            </div>
+        </div>
+        <div
+        fxFlexOffset=2>
+            <div
+            fxLayout=column>
+                <div
+                fxLayout=row>
+                    <span
+                    class="normal-bold">Mountain</span>
+                </div>
+                <div
+                fxLayout=row
+                class="object-and-distance">
+                    <span>Mosor</span>
+                    <span
+                    class="distance-property">13.7 mi</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div
+    fxLayout=row
+    class="all-distances-wrapper">
+        <span 
+        class="description"
+        fxFlexOffset=1.5em>* All distances are measured in straight lines. Actual travel distances may vary.</span>
+    </div>
+    <div
+    fxFlexOffset=2
+    fxLayout=column
+    class="some-info-container">
+        <div
+        class="some-info-title-wrapper"
+        fxLayout=row>
+            <span 
+            class="material-icons">
+                help_outline
+            </span>
+            <span
+            class="some-info-question"
+            fxFlexOffset=1.5em>Missing some info?</span>
+            <span 
+            class="material-icons close-icon">
+                close
+            </span>
+        </div>
+        <div
+        fxFlexOffset=1.5em
+        fxLayout=row>
+        <!-- ovo služi samo da se buttoni poravnaju sa gornjim textom -->
+            <span 
+                class="material-icons question-white-icon">
+                    help_outline
+            </span>
+            <button 
+                fxFlexOffset=1.5em
+                mat-stroked-button 
+                class="btn-yes">Yes</button>
+            <button 
+                fxFlexOffset=1.5em
+                mat-stroked-button 
+                class="btn-no">No</button>
+        </div>
+    </div>
+    <div
+    class="button-container"
+    fxFlexOffset=2
+    fxLayout=column>
+        <div
+        fxFlexOffset=1.5em
+        fyLayout=row>
+            <button 
+            fxFlex=92
+            fxFlexOffset=1.5em
+            mat-stroked-button 
+            class="btn-share-property">
+                <mat-icon 
+                class="button-icon material-icons-outlined">
+                    shared</mat-icon>
+                Share propety link</button>
+        </div>
+        <div
+        fxFlexOffset=1.5em
+        fxLayout=row>
+        <button 
+            fxFlex=92
+            fxFlexOffset=1.5em
+            mat-stroked-button 
+            class="btn-send-link">
+            <mat-icon 
+            class="button-icon material-icons-outlined">
+                shared</mat-icon>
+                Send link to myself</button>
+        </div>
+    </div>
+</div>
+<div class="example-button-row">
+    <button 
+    fxFlex=100
+    class="btn-select-rooms"
+    (click)="onSelectRoomClick()"
+    mat-raised-button>Select rooms</button>
+</div>
+

@@ -1,0 +1,38 @@
+.header-background{
+    background-color: var(--dark-blue);
+}
+.content-wrapper{
+    align-items: center;
+    min-height: 3rem;
+    margin-right: 1.5em;
+}
+.favorite-share-more-container > span{
+    margin-left: 2vw;
+}
+.back-icon-white, 
+.heart-icon-white, 
+.share-icon-white, 
+.more-icon-white,
+.accTitle,
+.accDate{
+    color: white;
+}
+.back-arrow-container,
+.favorite-share-more-container{
+    display: flex;
+}
+.favorite-share-more-container{
+    margin-left: auto;
+}
+@media only screen and (min-width: 768px){
+    .content-wrapper{
+        min-height: 4em;
+    }
+    .accTitle{
+        font-size: 1.1em;
+    }
+    .favorite-share-more-container > span,
+    .back-icon-white{
+        font-size: 28px;
+    }
+}

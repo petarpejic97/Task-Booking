@@ -1,0 +1,79 @@
+<div
+class=background-item
+fxLayout=row
+fxFlex=100
+fxFlexGap=3
+(click)=onItemClick()>
+    <img 
+    fxFlex=30
+    class="accomodation-photo"
+    [src]="accomodation.photos[0]" 
+    alt="">
+    <div
+    fxLayout=column
+    fxFlexOffset=1em
+    fxLayoutGap=3
+    fxFlex=64>
+        <div
+        fxFlexOffset=3>
+            <h4><b>{{accomodation.title}}</b></h4>
+        </div>
+        <div
+        class="star-container">
+            <i class="material-icons material-icons-round yellow-icon">star_rate</i>
+            <i class="material-icons material-icons-round yellow-icon">star_rate</i>
+            <i class="material-icons material-icons-round yellow-icon">star_rate</i>
+            <i class="material-icons material-icons-round yellow-icon">star_rate</i>
+            <i class="material-icons material-icons-round yellow-icon">star_rate</i>
+            <i class="material-icons material-icons-round white-icon">thumb_up</i>
+        </div>
+        <div
+        class="rate-container"
+        fxFlexOffset=1>
+            <div
+            class="rate-back">
+                <span class="rate">{{accomodation.rate}}</span>
+            </div>
+            <span class="normal-bold">Excellent</span>
+        </div>
+        <div
+        class="distance-container"
+        fxFlexOffset=1>
+            <div
+            class="icon-container">
+                <i class="material-icons mark">room</i>
+            </div>
+            <span class="description">{{accomodation.distanceToCenter}}</span>
+        </div>
+        <div
+        class="cleanliness-container"
+        fxFlexOffset=1>
+            <div
+            class="icon-container">
+                <img 
+                class="cleanliness-img"
+                src="assets/clean.svg" />
+            </div>
+            <span class="description">Cleanliness {{accomodation.cleanliness}}</span>
+        </div>
+        <div
+        class="bottom-right-container"
+        fxLayout=column
+        fxFlexAlign=flex-end>
+            <div>
+                <span class="normal-bold">Price for {{numberOfNights}} nights, {{tripDetail.adultsNumber}} adult, {{tripDetail.childrenNumber}} child</span>
+            </div>
+            <div
+            class="price-container">
+                <span class="price"
+                fxFlexAlign=end>HRK {{priceSum}}</span>
+            </div>
+            <div>
+                <span class="description">Includes taxes and changes</span>
+            </div>
+            <div>
+                <span class="prepayment">No prepayment needed</span>
+            </div>
+        </div>
+    </div>
+</div>

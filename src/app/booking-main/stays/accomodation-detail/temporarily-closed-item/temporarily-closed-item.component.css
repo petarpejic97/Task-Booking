@@ -1,0 +1,17 @@
+.temp-closed-icon{
+    width: 1.3em;
+}
+.date-range{
+    white-space: pre-line;
+}
+@media only screen and (min-width: 768px){
+    .temp-closed-icon{
+        width: 1.6em;
+    }
+    span.small-bold{
+        font-size: 1em;
+    }
+    .date-range{
+        font-size: 1.1em;
+    }
+}

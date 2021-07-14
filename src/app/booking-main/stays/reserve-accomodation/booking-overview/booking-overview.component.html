@@ -1,0 +1,278 @@
+<div
+fxLayout=column
+class="background bg-color">
+    <div
+    class="accomodation-container">
+        <div
+        class="accomodation-info-wrapper"
+        fxLayout=row>
+            <img 
+            fxFlex=40
+            src="{{accomodation.photos[0]}}" 
+            alt="">
+            <div
+            fxFlexOffset=1.5em
+            fxLayout=column>
+                <span
+                class="normal-bold">{{accomodation.title}}</span>
+                <div
+                class="star-container">
+                    <i class="material-icons material-icons-round yellow-icon">star_rate</i>
+                    <i class="material-icons material-icons-round yellow-icon">star_rate</i>
+                    <i class="material-icons material-icons-round yellow-icon">star_rate</i>
+                    <i class="material-icons material-icons-round yellow-icon">star_rate</i>
+                    <i class="material-icons material-icons-round yellow-icon">star_rate</i>
+                    <i class="material-icons material-icons-round thumb-up">thumb_up</i>
+                </div>
+                <span>{{accomodation.address}}, {{accomodation.city}}</span>
+            </div>
+        </div>
+        <hr>
+        <div
+        fxLayout=row
+        class="check-in-wrapper">
+            <span
+            class="normal-bold">Check-in</span>
+            <span>{{fullStartDate.dayName}} {{fullStartDate.month}} {{fullStartDate.day}} {{fullStartDate.year}}</span>
+        </div>
+        <hr>
+        <div
+        fxLayout=row
+        class="check-out-wrapper">
+            <span
+            class="normal-bold">Check-out</span>
+            <span>{{fullEndDate.dayName}} {{fullEndDate.month}} {{fullEndDate.day}} {{fullEndDate.year}}</span>
+        </div>
+        <hr>
+        <div
+        fxLayout=row
+        class="for-wrapper">
+            <span
+            class="normal-bold">For</span>
+            <span>{{numberOfNights}} nights, 1 apartment</span>
+        </div>
+    </div>
+    <hr>
+    <div
+    class="price-wrapper">
+        <div
+        class="stay-room-wrapper"
+        fxLayout=row>
+            <span>{{accomodation.title}}</span>
+            <span>€ {{sumPrice-21}}</span>
+        </div>
+        <div
+        class="taxes-wrapper"
+        fxLayout=row>
+            <span>Taxes and charges</span>
+            <span>+ € 21</span>
+        </div>
+    </div>
+    <div
+    class="final-price-wrapper"
+    fxLayout=row>
+        <span
+        class="final-price">Final price</span>
+        <span
+        class="sum-price">€ {{sumPrice}}</span>
+    </div>
+    <div
+    fxFlexOffset=2
+    class="earn-credit-wrapper"
+    fxLayout=row>
+        <div
+        class="icon-container">
+            <span 
+            class="material-icons material-icons-outlined credit-card-icon">
+                credit_card
+            </span>
+        </div>
+        <div
+        fxFlexOffset=1.5em
+        fxLayout=column
+        class="earn-from-booking-wrapper">
+            <span
+            class="normal-bold">
+                You'll earn <span class="green-credit">€ 10.80 credit</span> from this booking
+            </span>
+            <span
+            fxFlexOffset=2
+            class="see-detail">
+                See details
+            </span>
+        </div>
+    </div>
+    <div
+    fxFlexOffset=2
+    class="house-rules-wrapper"
+    fxLayout=column>
+        <span 
+        class="house-rules">Review House Rules</span>
+        <span
+        class="description">
+            {{accomodation.title}}
+        </span>
+        <span
+        fxFlexOffset=1.5em>
+            Your host would lke you to agree to the following house rules:
+        </span>
+        <ul>
+            <li>No smoking</li>
+            <li>Pets are not allowed</li>
+            <li>Parties/events are not allowed</li>
+            <li>Quiet hours are between 11:00 PM and 7:00 AM</li>
+        </ul>
+        <span>By counting to the next step, you agree to these house rules.</span>
+    </div>
+    <div
+    fxFlexOffset=2
+    class="key-highlights-container"
+    fxLayout=column>
+        <span
+        class="normal-bold">Key highlights</span>
+        <div
+        fxFlexOffset=1.5em
+        fxLayout=row>
+            <span 
+            class="material-icons material-icons-outlined wifi-icon">
+                wifi
+            </span>
+            <div
+            fxFlexOffset=1.5em
+            fxLayout=column>
+                <span>Strong WiFi</span>
+                <span
+                class="description">Based on 76 related reviews</span>
+            </div>
+        </div>
+        <div
+        fxFlexOffset=1.5em
+        fxLayout=row>
+            <div
+            class="shine-img-container">
+                <img 
+                class="clean-img"
+                src="https://static.thenounproject.com/png/2952323-200.png" 
+                alt="">
+            </div>
+            
+            <div
+            fxLayout=column
+            fxFlexOffset=1.5em>
+                <span>Sparkly clean</span>
+                <span
+                class="description">Based on 817 related reviews</span>
+            </div>
+        </div>
+    </div>
+    <div
+    fxFlexOffset=2
+    class="stay-info-container"
+    fxLayout=column>
+        <span
+        class="acc-title">{{stay.title}}</span>
+        <div
+        fxFlexOffset=1.5em
+        fxLayout=row
+        fxLayoutAlign="none center" 
+        *ngIf="stay.firstStayInfo === 'Non-refundable'|| stay.secondStayInfo === 'Non-refundable' || stay.thirdStayInfo === 'Non-refundable'">
+            <span 
+            class="material-icons material-icons-outlined stay-info-icon non-refundable-icon"> 
+                not_interested </span>
+            <span
+            fxFlexOffset=1.5em>Non-refundable</span>
+        </div>
+        <div
+        fxFlexOffset=1.5em
+        fxLayout=row
+        fxLayoutAlign="none center" >
+            <span 
+            class="material-icons material-icons-outlined stay-info-icon family-restroom-icon"> 
+                family_restroom</span>
+            <span
+            fxFlexOffset=1.5em>{{accomodation.adultsNum}} adults, {{accomodation.childrenNum}} children (3 years old)</span>
+        </div>
+        <div
+        fxFlexOffset=1.5em
+        fxLayout=row
+        fxLayoutAlign="none center" >
+            <span 
+            class="material-icons material-icons-outlined stay-info-icon account-circle-icon"> 
+                account_circle</span>
+            <span
+            fxFlexOffset=1.5em>Booking for {{user.firstName}} {{user.lastName}}</span>
+        </div>
+        <div
+        fxFlexOffset=1.5em
+        fxLayout=row
+        fxLayoutAlign="none center" >
+            <span 
+            class="material-icons material-icons-outlined stay-info-icon king-bed-icon"> 
+                king_bed</span>
+            <span
+            fxFlexOffset=1.5em>
+                <span
+                *ngIf="stay.kingBed">{{stay.kingBed}} king bed</span>
+                <span
+                *ngIf="stay.queenBed">{{stay.queenBed}} queen bed</span>
+                <span
+                *ngIf="stay.futonBed">{{stay.futonBed}} futon bed</span>
+            </span>
+        </div>
+        
+        <span 
+        fxFlexOffset=1.5em
+        class="moore-room-info">More room info</span>
+
+        <span 
+        fxFlexOffset=1.5em
+        class="booking-conditions">Booking Conditions</span>
+    </div>
+    <div
+    fxFlexOffset=2
+    class="estimate-arrival-time-container"
+    fxLayout=row>
+        <span 
+        class="material-icons material-icons-outlined clock-icon"> 
+        query_builder</span>
+        <div
+        fxFlexOffset=1.5em
+        fxLayout=column>
+            <span
+            class="normal-bold">Share your estimated arrival time</span>
+            <span>
+                Your host would like to know when you arrive. Don't worry - you can do this after you book too.
+            </span>
+            <mat-form-field>
+                <mat-select [value]="times[0]">
+                    <mat-option *ngFor="let time of times" [value]="times[0]">
+                    {{time}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+    <div
+    fxFlexOffset=2
+    class="special-requests-container"
+    fxLayout=column>
+        <span
+        class="normal-bold">Special requests</span>
+        <mat-checkbox 
+            labelPosition=before
+            fxFlex=100
+            fxFlexOffset=1.5em
+            fxLayout=row
+            class="checkbox-special-requests normal-bold">
+                <img 
+                class="p-img-wrapper"
+                src="https://www.flaticon.com/svg/static/icons/svg/905/905535.svg" 
+                alt="">
+                <span
+                fxFlexOffset=1.5em>I'm traveling for work</span> 
+        </mat-checkbox>
+        <span
+        fxFlexOffset=1.5em
+        class="add-request">Add a Special Request</span>
+    </div>
+</div>

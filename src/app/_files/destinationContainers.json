@@ -1,0 +1,176 @@
+[
+    {
+        "title":  "Soak up some sun" ,
+        "subtitle":  "Get your dose of vitamin D in these sunny destinations",
+        "className": "soak-up-sun",
+        "destinationAndTravelers": [
+                {
+                    "photo":  "//aff.bstatic.com/images/city/square250/971/971920.jpg" ,
+                    "city":  "Rovinj" ,
+                    "state":  "Croatia" ,
+                    "price": 299,
+                    "connectType": "",
+                    "typeDescription": "",
+                    "numTravels": 0
+                },
+                {
+                  "photo":  "//aff.bstatic.com/images/city/square250/972/972725.jpg",
+                  "city":  "Dubrovnik" ,
+                  "state":  "Croatia" ,
+                  "price": 299,
+                  "connectType": "",
+                  "typeDescription": "",
+                  "numTravels": 0
+                },
+                {
+                  "photo":  "//aff.bstatic.com/images/city/square250/972/972767.jpg" ,
+                  "city":  "Zadar" ,
+                  "state":  "Croatia" ,
+                  "price": 299,
+                  "connectType": "",
+                  "typeDescription": "",
+                  "numTravels": 0
+                },
+                {
+                  "photo":  "http://aff.bstatic.com/images/city/square250/639/639279.jpg",
+                  "city":  "Zagreb" ,
+                  "state":  "Croatia" ,
+                  "price": 299,
+                  "connectType": "",
+                  "typeDescription": "",
+                  "numTravels": 0
+                },
+                {
+                "photo":  "https://blog.goway.com/globetrotting/wp-content/uploads/2018/11/Panorama-of-Barcelona-city-from-Columbus-Monument-Barcelona-Spain-_228406630.jpg" ,
+                "city":  "Barcelona" ,
+                "state":  "Spain" ,
+                "price": 299,
+                "connectType": "",
+                "typeDescription": "",
+                "numTravels": 0
+                },
+                {
+                  "photo":  "https://jpgreatcontent.co.uk/wp-content/uploads/2020/04/Dubai-Copy.jpeg",
+                  "city":  "Dubai" ,
+                  "state":  "United Arab Emirates" ,
+                  "price": 299,
+                  "connectType": "",
+                  "typeDescription": "",
+                  "numTravels": 0
+                },
+                {
+                  "photo":  "//aff.bstatic.com/images/city/square250/638/638617.jpg" ,
+                  "city":  "Split" ,
+                  "state":  "Croatia" ,
+                  "price": 299,
+                  "connectType": "",
+                  "typeDescription": "",
+                  "numTravels": 0
+                }
+        ]
+    },
+    {
+        "title":  "Popular destinations" ,
+        "subtitle":  "",
+        "className": "popular-destination",
+        "destinationAndTravelers": [
+            {
+                "photo":  "https://blog.goway.com/globetrotting/wp-content/uploads/2018/11/Panorama-of-Barcelona-city-from-Columbus-Monument-Barcelona-Spain-_228406630.jpg" ,
+                "city":  "Barcelona" ,
+                "state":  "Spain" ,
+                "price": 299,
+                "connectType": "",
+                "typeDescription": "",
+                "numTravels": 0
+            },
+            {
+                "photo":  "https://jpgreatcontent.co.uk/wp-content/uploads/2020/04/Dubai-Copy.jpeg",
+                "city":  "Dubai" ,
+                "state":  "United Arab Emirates" ,
+                "price": 299,
+                "connectType": "",
+                "typeDescription": "",
+                "numTravels": 0
+            },
+            {
+                "photo":  "//aff.bstatic.com/images/city/square250/638/638617.jpg" ,
+                "city":  "Split" ,
+                "state":  "Croatia" ,
+                "price": 299,
+                "connectType": "",
+                "typeDescription": "",
+                "numTravels": 0
+            },
+            {
+                "photo":  "//aff.bstatic.com/images/city/square250/972/972767.jpg" ,
+                "city":  "Zadar" ,
+                "state":  "Croatia" ,
+                "price": 299,
+                "connectType": "",
+                "typeDescription": "",
+                "numTravels": 0
+            },
+            {
+                "photo":  "//aff.bstatic.com/images/city/square250/972/972725.jpg",
+                "city":  "Dubrovnik" ,
+                "state":  "Croatia" ,
+                "price": 299,
+                "connectType": "",
+                "typeDescription": "",
+                "numTravels": 0
+            },
+            {
+                "photo":  "//aff.bstatic.com/images/city/square250/971/971920.jpg" ,
+                "city":  "Rovinj" ,
+                "state":  "Croatia" ,
+                "price": 299,
+                "connectType": "",
+                "typeDescription": "",
+                "numTravels": 0
+            },
+            {
+                "photo":  "http://aff.bstatic.com/images/city/square250/639/639279.jpg",
+                "city":  "Zagreb" ,
+                "state":  "Croatia" ,
+                "price": 299,
+                "connectType": "",
+                "typeDescription": "",
+                "numTravels": 0
+            }
+        ]
+    },
+    {
+        "title":  "Connect with other travelers" ,
+        "subtitle":  "",
+        "className": "connect-travelers",
+        "destinationAndTravelers": [
+            {
+                "photo":  "https://hagio.hr/wp-content/uploads/2020/02/GettyImages-160326725_medium.jpg" ,
+                "city":  "" ,
+                "state":  "" ,
+                "price": 0,
+                "connectType": "Croatia",
+                "typeDescription": "Travel community",
+                "numTravels": 168.842
+            },
+            {
+                "photo":  "https://ca-times.brightspotcdn.com/dims4/default/685c1e6/2147483647/strip/true/crop/2046x1151+1+0/resize/1200x675!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F25%2Fbd%2F0d3afc5c976724d81397406f524e%2Fla-1553301925-kabslngi6v-snap-image",
+                "city":  "" ,
+                "state":  "" ,
+                "price": 0,
+                "connectType": "Travel talk",
+                "typeDescription": "General discussio",
+                "numTravels": 559.436
+            },
+            {
+                "photo":  "https://liquidplanner-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/iStock-1014903134.jpg" ,
+                "city":  "" ,
+                "state":  "" ,
+                "price": 0,
+                "connectType": "More communities",
+                "typeDescription": "View all",
+                "numTravels": 10.103
+            }
+        ]
+    }
+]

@@ -1,0 +1,30 @@
+img{
+    width: 1.3em;
+}
+.component{
+    white-space: nowrap;
+}
+.sidenavitem{
+    padding: 1% 0;
+}
+.helpandsupport > span, 
+.sefullinks > span,  
+.settingsandlegal > span  
+{
+    font-weight: 600;
+    margin-left: -1.3em!important;
+}
+.signin:focus{
+    outline: none;
+}
+@media only screen and (min-width: 768px) {
+    img{
+        width: 1.6em;
+    }
+    span{
+        font-size: 1.2em;
+    }
+    .sidenavitem{
+        padding: 2% 0;
+    }
+  }

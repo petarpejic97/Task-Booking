@@ -1,0 +1,29 @@
+hr { 
+    background-color: rgb(219, 219, 219); 
+    height: 1px; 
+    border: 0; 
+    margin-bottom: 3px;
+}
+.destination-wrapper{
+    margin-top: 1%;
+}
+.city-name{
+    font-weight: 500;
+}
+.city-region, .city-properties {
+    color: grey;
+    font-size: 0.7em;
+    font-family: system-ui;
+}
+@media only screen and (min-width: 768px) {
+    .example-option-img{
+        width: 60px;
+        height: 60px;
+    }    
+    .city-name{
+        font-size: 0.9em;
+    }
+    .city-region, .city-properties {
+        font-size: 0.8em;
+    }
+}

@@ -1,0 +1,76 @@
+<div
+fxLayout=column
+class="background">
+    <div
+        fxFlexOffset=5
+        fxLayout="row"
+        routerLink="/booking-main">
+            <span 
+            fxFlexOffset=5
+            class="material-icons x-icon-white">
+                close
+            </span>
+        </div>
+        <p class="title"><b>Booking.com</b></p>
+        <div
+        fxLayout="column"
+        fxLayoutGap="10px"
+        fxLayoutAlign="end">
+            <div
+            fxLayout="row">
+                <button
+                fxFlex="90"
+                fxFlexOffset="5%"
+                class="google" mat-raised-button> 
+                    <img class="googleimg" src="data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FwYV8xIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGc+PHBhdGggZD0ibTEyMCAyNTZjMC0yNS4zNjcgNi45ODktNDkuMTMgMTkuMTMxLTY5LjQ3N3YtODYuMzA4aC04Ni4zMDhjLTM0LjI1NSA0NC40ODgtNTIuODIzIDk4LjcwNy01Mi44MjMgMTU1Ljc4NXMxOC41NjggMTExLjI5NyA1Mi44MjMgMTU1Ljc4NWg4Ni4zMDh2LTg2LjMwOGMtMTIuMTQyLTIwLjM0Ny0xOS4xMzEtNDQuMTEtMTkuMTMxLTY5LjQ3N3oiIGZpbGw9IiNmYmJkMDAiLz48cGF0aCBkPSJtMjU2IDM5Mi02MCA2MCA2MCA2MGM1Ny4wNzkgMCAxMTEuMjk3LTE4LjU2OCAxNTUuNzg1LTUyLjgyM3YtODYuMjE2aC04Ni4yMTZjLTIwLjUyNSAxMi4xODYtNDQuMzg4IDE5LjAzOS02OS41NjkgMTkuMDM5eiIgZmlsbD0iIzBmOWQ1OCIvPjxwYXRoIGQ9Im0xMzkuMTMxIDMyNS40NzctODYuMzA4IDg2LjMwOGM2Ljc4MiA4LjgwOCAxNC4xNjcgMTcuMjQzIDIyLjE1OCAyNS4yMzUgNDguMzUyIDQ4LjM1MSAxMTIuNjM5IDc0Ljk4IDE4MS4wMTkgNzQuOTh2LTEyMGMtNDkuNjI0IDAtOTMuMTE3LTI2LjcyLTExNi44NjktNjYuNTIzeiIgZmlsbD0iIzMxYWE1MiIvPjxwYXRoIGQ9Im01MTIgMjU2YzAtMTUuNTc1LTEuNDEtMzEuMTc5LTQuMTkyLTQ2LjM3N2wtMi4yNTEtMTIuMjk5aC0yNDkuNTU3djEyMGgxMjEuNDUyYy0xMS43OTQgMjMuNDYxLTI5LjkyOCA0Mi42MDItNTEuODg0IDU1LjYzOGw4Ni4yMTYgODYuMjE2YzguODA4LTYuNzgyIDE3LjI0My0xNC4xNjcgMjUuMjM1LTIyLjE1OCA0OC4zNTItNDguMzUzIDc0Ljk4MS0xMTIuNjQgNzQuOTgxLTE4MS4wMnoiIGZpbGw9IiMzYzc5ZTYiLz48cGF0aCBkPSJtMzUyLjE2NyAxNTkuODMzIDEwLjYwNiAxMC42MDYgODQuODUzLTg0Ljg1Mi0xMC42MDYtMTAuNjA2Yy00OC4zNTItNDguMzUyLTExMi42MzktNzQuOTgxLTE4MS4wMi03NC45ODFsLTYwIDYwIDYwIDYwYzM2LjMyNiAwIDcwLjQ3OSAxNC4xNDYgOTYuMTY3IDM5LjgzM3oiIGZpbGw9IiNjZjJkNDgiLz48cGF0aCBkPSJtMjU2IDEyMHYtMTIwYy02OC4zOCAwLTEzMi42NjcgMjYuNjI5LTE4MS4wMiA3NC45OC03Ljk5MSA3Ljk5MS0xNS4zNzYgMTYuNDI2LTIyLjE1OCAyNS4yMzVsODYuMzA4IDg2LjMwOGMyMy43NTMtMzkuODAzIDY3LjI0Ni02Ni41MjMgMTE2Ljg3LTY2LjUyM3oiIGZpbGw9IiNlYjQxMzIiLz48L2c+PC9zdmc+" />
+                    <span class="buttontext">Continue with Google</span>
+                </button>
+            </div>
+        <div
+        fxLayout="row">
+            <button 
+            fxFlex="90"
+            fxFlexOffset="5%"
+            class="facebook" mat-raised-button
+            routerLink='../connect-with-facebook'> 
+                <img src="https://www.freeiconspng.com/uploads/facebook-f-logo-white-background-21.jpg" />
+                <span class="buttontext">Continue with Facebook</span>
+            </button>
+        </div>
+        <div
+        fxLayout="row">
+            <button 
+            fxFlex="90"
+            fxFlexOffset="5%"
+            class="email" mat-raised-button> 
+                <div 
+                class="bookingicon">
+                    <b>B.</b>
+                </div>
+                <span class="buttontext">Sign in with email</span>
+
+            </button>
+        </div>
+        <div
+        class="or">
+            &mdash; Or &mdash;
+        </div>
+        <div
+        fxLayout="row">
+            <button 
+            fxFlex="90"
+            fxFlexOffset="5%"
+            class="createacc" mat-raised-button
+            routerLink='../create-account'> 
+            <span class="buttontext"> Create your account</span>
+            </button>
+        </div>
+        <div
+        fxLayout="row">
+            <p
+            fxFlex="85"
+            fxFlexOffset="7.5%">
+                By creating or logging into an account you're agreeing with our <a href="">Terms & Conditions</a> and <a href="">Privacy Statement</a></p>
+        </div>
+    </div>
+</div>

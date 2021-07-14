@@ -1,0 +1,55 @@
+[
+    {
+    "photo":  "https://blog.goway.com/globetrotting/wp-content/uploads/2018/11/Panorama-of-Barcelona-city-from-Columbus-Monument-Barcelona-Spain-_228406630.jpg" ,
+    "city":  "Barcelona" ,
+    "region":  "Catalonia" ,
+    "state":  "Spain" ,
+    "properties":  5657 ,
+    "price":  230 
+    },
+    {
+      "photo":  "https://jpgreatcontent.co.uk/wp-content/uploads/2020/04/Dubai-Copy.jpeg",
+      "city":  "Dubai" ,
+      "region":  "Arabian Peninsula" ,
+      "state":  "United Arab Emirates" ,
+      "properties":  3677 ,
+      "price":  230 
+    },
+    {
+      "photo":  "//aff.bstatic.com/images/city/square250/638/638617.jpg" ,
+      "city":  "Split" ,
+      "region":  "Splitsko-dalmatinska županija" ,
+      "state":  "Croatia" ,
+      "properties":  985 ,
+      "price":  230 
+    },
+    {
+      "photo":  "//aff.bstatic.com/images/city/square250/972/972767.jpg" ,
+      "city":  "Zadar" ,
+      "region":  "Zadarska županija" ,
+      "state":  "Croatia" ,
+      "properties":  881 ,
+      "price":  245 },
+    {
+      "photo":  "//aff.bstatic.com/images/city/square250/972/972725.jpg",
+      "city":  "Dubrovnik" ,
+      "region":  "Dubrovačko-neretvanska županija" ,
+      "state":  "Croatia" ,
+      "properties":  694 ,
+      "price":  194 },
+    {
+      "photo":  "//aff.bstatic.com/images/city/square250/971/971920.jpg" ,
+      "city":  "Rovinj" ,
+      "region":  "Istarska županija",
+      "state":  "Croatia" ,
+      "properties":  456 ,
+      "price":  236 },
+    {
+      "photo":  "http://aff.bstatic.com/images/city/square250/639/639279.jpg",
+      "city":  "Zagreb" ,
+      "region":  "Grad Zagreb" ,
+      "state":  "Croatia" ,
+      "properties":  747 ,
+      "price":  95 
+    }
+]

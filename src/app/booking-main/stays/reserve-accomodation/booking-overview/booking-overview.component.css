@@ -1,0 +1,173 @@
+.background{
+    margin-top: 7.5em;
+}
+.accomodation-container,
+.price-wrapper,
+.earn-credit-wrapper,
+.house-rules-wrapper,
+.key-highlights-container,
+.stay-info-container,
+.estimate-arrival-time-container,
+.special-requests-container{
+    background-color: white;
+    padding: 1.5em;
+}
+.price-wrapper{
+    padding-bottom: 0%;
+}
+.accomodation-container{
+    padding-bottom: 0;
+}
+.star-container{
+    display: flex;
+    align-items: center;
+}
+.yellow-icon{
+    color: #ffbc00!important;
+    margin-left: -3%;
+}
+.thumb-up{
+    font-size: 0.8em;
+    height: fit-content;
+    color: white;
+    background-color: #ffbc00;
+    padding: 3px;
+    border-radius: 2px;
+    margin-left: 5%;
+}
+.accomodation-info-wrapper{
+    margin-bottom: 4%;
+}
+hr{
+    background-color: rgb(219, 219, 219); 
+    width: 100%; 
+    border: 0; 
+    height: 1px;
+    margin: 0;
+}
+.check-in-wrapper,
+.check-out-wrapper,
+.for-wrapper{
+    line-height: 3em;  
+}
+.stay-room-wrapper,
+.taxes-wrapper,
+.final-price-wrapper{
+    line-height: 2em;  
+}
+.check-in-wrapper,
+.check-out-wrapper,
+.for-wrapper,
+.stay-room-wrapper,
+.taxes-wrapper,
+.final-price-wrapper{
+    justify-content: space-between;
+}
+.final-price,
+.sum-price{
+    font-weight: bold;
+}
+.final-price-wrapper{
+    padding: 2% 4%;
+    background-color: rgb(247, 247, 255);
+}
+.credit-card-icon,
+.green-credit{
+    color: green;
+}
+.see-detail{
+    color: #4267B2
+}
+.house-rules,
+.acc-title{
+    font-size: medium;
+    font-weight: 500;
+}
+ul{
+    padding-left: 4%;
+}
+.shine-img-container{
+    width: 1.5em;
+}
+
+.moore-room-info,
+.booking-conditions{
+    font-weight: 500;
+}
+.stay-info-icon,
+.wifi-icon{
+    font-size: 1.5em;
+}
+.mat-form-field{
+    width: 70%;
+}
+::ng-deep .mat-select-panel{
+    max-height: 250px!important;
+}
+.special-requests-container{
+    margin-bottom: 4.8em;
+}
+.p-img-wrapper{
+    width: 1.2em;
+}
+
+.special-requests-container > ::ng-deep .mat-checkbox > .mat-checkbox-layout{
+    width: 100%;
+    justify-content: space-between;
+}
+::ng-deep  .mat-checkbox-label{
+    align-items: center;
+    display: flex;
+}
+::ng-deep .special-requests-container > .mat-checkbox-label-before .mat-checkbox-inner-container{
+    margin-right: 0!important;
+}
+::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+    background-color: #0346a5;
+}
+.add-request{
+    font-weight: 500;
+    color: #0346a5;
+}
+.clean-img{
+    width: 1.5em;
+}
+@media only screen and (min-width: 768px){
+    .background{
+        margin-top: 8em;
+    }
+    .normal-bold,
+    
+    div.accomodation-info-wrapper > div > span:nth-child(3),
+    div.check-in-wrapper > span:nth-child(2),
+    div.check-out-wrapper > span:nth-child(2),
+    .for-wrapper > span:nth-child(2),
+    .stay-room-wrapper > span,
+    .taxes-wrapper > span,
+    .final-price-wrapper > span,
+    .see-detail,
+    .house-rules,
+    div.house-rules-wrapper > span:nth-child(3),
+    div.house-rules-wrapper > ul > li,
+    div.house-rules-wrapper > span:nth-child(5),
+    div.key-highlights-container > div:nth-child(2) > div > span:nth-child(1),
+    div.key-highlights-container > div:nth-child(3) > div:nth-child(2) > span:nth-child(1),
+    div.stay-info-container > div> span:nth-child(2),
+    div.estimate-arrival-time-container > div > span:nth-child(2),
+    .moore-room-info,
+    .booking-conditions,
+    ::ng-deep #mat-select-value-1 > span > span,
+    .add-request{
+        font-size: 1.1em;
+    }
+    .description{
+        font-size: 1em;
+    }
+    .material-icons{
+        font-size: 28px;
+    }
+    .clean-img,
+    .shine-img-container{
+        width: 2em;
+    }
+}

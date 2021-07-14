@@ -1,0 +1,74 @@
+<div
+class="background bg-color"
+fxLayout=column>
+  <div
+  class="header-background"
+  fxLayout="row"
+  fxFlex=4em>
+      <div 
+      class="content-wrapper"
+      fxLayout=row
+      fxFlex=95>
+          <div
+          routerLink='..'
+          class="arrow-icon-wrapper">
+              <span 
+              fxFlexOffset=0.5em
+              class="material-icons arrow-back-icon-white">
+                  arrow_back
+              </span>
+          </div>
+          <form class="example-form">
+              <mat-form-field class="example-full-width .small-bold"
+              floatLabel="never">
+                <input 
+                      class="destination-input"
+                      matInput
+                      placeholder="Enter destination"
+                      aria-label="Enter destination"
+                      [matAutocomplete]="auto"
+                      (click)='stylize()'
+                      [formControl]="cityCtrl">
+                <mat-autocomplete #auto="matAutocomplete">
+                  <mat-option *ngFor="let destination of filteredCities | async | slice : 0 : 5" [value]="destination.city">
+                    <app-destination-item
+                    [destination]=destination
+                    ></app-destination-item>
+                  </mat-option>
+                </mat-autocomplete>
+              </mat-form-field>
+          </form>
+      </div>
+  </div>
+  <div
+  class="background"
+  fxLayout=column>
+    <div
+    class="current-location-wrapper"
+    fxFlexOffset=1
+    fxLayout=row>
+      <div
+      fxFlexOffset=1.5em
+      fxFlex=100
+      fxLayout=column>
+        <div
+        fxFlexOffset=1em
+        fxLayout=row
+        class="location-content-wrapper">
+          <div>
+            <span 
+            class="material-icons gps-icon-blue">
+                gps_fixed
+            </span>
+          </div>
+          <div
+          fxFlexOffset=3
+          fxLayout=column>
+              <span class="around-curr-loc small-bold">Around current location</span>
+              <span class="description city">Osijek</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

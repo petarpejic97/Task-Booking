@@ -1,0 +1,36 @@
+<div
+class="header-background"
+fxLayout="row"
+fxFlex=100>
+    <div 
+    class="content-wrapper"
+    fxLayout=row
+    fxFlex=100
+    fxFlexOffset=1.5em>
+        <div
+        class="back-arrow-container"
+        (click)=back()>
+            <span 
+            class="material-icons back-icon-white">
+                arrow_back
+            </span>
+        </div>
+        <div
+        fxFlexOffset=1.5em
+        fxLayout=column>
+            <span class="accTitle">Choose your stay</span>
+            <span class="accDate">{{dateWithoutYear}}</span>
+        </div>
+        <div
+        class="favorite-share-more-container">
+            <span
+            class="material-icons share-icon-white">
+                share
+            </span>
+            <span
+            class="material-icons money-icon-white">
+                euro
+            </span>
+        </div>
+    </div>
+</div>

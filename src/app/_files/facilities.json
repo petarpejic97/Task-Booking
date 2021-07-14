@@ -1,0 +1,47 @@
+[
+    {
+      "icon": "pets",
+      "title": "Pets",
+      "description": "Pets are not allowed."
+    },
+    {
+        "icon": "wifi",
+        "title": "Internet",
+        "description": "WiFi is available in all areas and is free of charge."
+    },
+    {
+        "icon": "local_parking",
+        "title": "Parking",
+        "description": "Free private parking is available at a location nearby (reservation is needed)."
+    },
+    {
+        "icon": "info",
+        "title": "General",
+        "description": "Heating \n Shuttle service(additional charge) \n Honeymoon suite \n Smoke-free property \n Safe \n Hypoallergenic room available \n Airport shuttle"
+    },
+    {
+        "icon": "family_restroom",
+        "title": "Entertainment & Family Services",
+        "description": "Baby safety fates \n Kids' TV channels \n Babysitting/Child services(additional charge)"
+    },
+    {
+        "icon": "restaurant",
+        "title": "Food & Drink",
+        "description": "Snack bar \n Bar"
+    },
+    {
+        "icon": "ac_unit",
+        "title": "Miscellaneous",
+        "description": "CCTV outside property \n Access to healthcare professionals \n Fire extinguishers"
+    },
+    {
+        "icon": "deck",
+        "title": "Outdoors",
+        "description": "Garden"
+    },
+    {
+        "icon": "golf_course",
+        "title": "Activities",
+        "description": "Temporary art galleries \n Bar crawls \n Walking tours \n Live sports event"
+    }
+  ]

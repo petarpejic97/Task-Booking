@@ -1,0 +1,111 @@
+.background{
+    margin-top: 6em;
+}
+.card-information-container,
+.card-not-charged-container,
+.your-info-container,
+.accomodation-book-container,
+.promo-code-container,
+.no-payment-container{
+    background-color: white;
+    padding: 1.5em;
+}
+.img-wrapper{
+    width: 2em;
+}
+.card-img{
+    width: 100%;
+}
+.matcheckboxcontainer >::ng-deep .mat-checkbox-layout > .mat-checkbox-label{
+    white-space: break-spaces!important;
+}
+.expiration-date{
+    width: 50%;
+}
+.info-icon{
+    color: green;
+}
+.card-not-charged-title{
+    color: green;
+}
+.price-wrapper{
+    justify-content: space-between;
+    align-items: center;
+}
+.see-more{
+    display: flex;
+    align-items: center;
+}
+.see-more,
+.promo-code-text{
+    color: #4267B2;
+}
+hr{
+    background-color: rgb(219, 219, 219); 
+    width: 100%; 
+    border: 0; 
+    height: 1px;
+    margin: 0;
+}
+.promo-code-container{
+    display: flex;
+    justify-content: center;
+}
+.card-not-charged-title{
+    font-weight: 500;
+}
+.promo-code-text{
+    font-weight: 500;
+    justify-content: center;
+}
+.statement-text{
+    font-size: small;
+    color: #565656;
+    text-align: center;
+}
+.info-icon-no-payment,
+.no-payment-title{
+    color: #0346a5;
+}
+.no-payment-title{
+    font-weight: 500;
+}
+.blue-statement,
+.more-info{
+    color: #4267B2;
+}
+.booking-statement-condition-container,
+.package-info-container{
+    padding: 1.5em;
+}
+.package-info-text{
+    font-size: smaller;
+}
+.package-info-container{
+    margin-bottom: 4.5em;
+}
+@media only screen and (min-width: 768px){
+    .background{
+        margin-top: 7em;
+    }
+    .normal-bold,
+    .mat-checkbox-label
+    div.card-not-charged-container > div > span,
+    .your-info-container > span,
+    div.accomodation-book-container > div:nth-child(2) > span,
+    div.accomodation-book-container > div:nth-child(3) > span,
+    .see-more,
+    .promo-code-text,
+    div.no-payment-container > div > span{
+        font-size: 1.1em;
+    }
+    .img-wrapper{
+        width: 2.2em;
+    }
+    .material-icons-outlined{
+        font-size: 28px;
+    }
+    .description{
+        font-size: 1em;
+    }
+}

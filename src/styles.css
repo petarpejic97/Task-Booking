@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+  --dark-blue: #003580;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+body { 
+  margin: 0; 
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.small-bold{
+  font-size: 0.9em;
+  font-weight: 500;
+}
+.normal-bold{
+  font-weight: 500;
+}
+.description{
+  font-size: 0.9em;
+  color: rgb(58, 58, 58);
+}
+.mat-form-field{
+  height: 100%;
+  width: 100%;
+}
+.bg-color{
+  background-color:rgb(219, 219, 219); 
+}
+.txt-dissapear{
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(219, 219, 219)), to(black), color-stop(0.5, black));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: height .5s;
+}
+.bg-green{
+  background-color: green!important;
+}

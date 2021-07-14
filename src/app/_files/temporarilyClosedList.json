@@ -1,0 +1,32 @@
+[
+    {
+      "icon":  "https://www.flaticon.com/svg/static/icons/svg/449/449464.svg ",
+      "title":  "Sauna" ,
+      "dateRange":  "(from Fri, Sept 18, 2020 until Thu, Dec 31, 2020)" 
+    },
+    {
+      "icon":  "https://www.flaticon.com/svg/static/icons/svg/3578/3578355.svg" ,
+      "title":  "Fitness center" ,
+      "dateRange":  "(from Fri, Sept 18, 2020 until Thu, Dec 31, 2020)" 
+    },
+    {
+      "icon":  "https://www.flaticon.com/svg/static/icons/svg/637/637211.svg" ,
+      "title":  "Restaurant" ,
+      "dateRange":  "(from Thu, Oct 15, 2020 until Fri, Apr 30, 2020)" 
+    },
+    {
+      "icon":  "https://www.flaticon.com/svg/static/icons/svg/2088/2088123.svg ",
+      "title":  "Swimming pool" ,
+      "dateRange":  "Pool 1 - indoor(from Fri, Sept 18, 2020 until Thu, Dec 31, 2020)\n Pool 1 - outdoor(from Thu, Oct 15, 2020 until Fri, Apr 30, 2020)"
+    },
+    {
+      "icon":  "https://www.flaticon.com/svg/static/icons/svg/2929/2929462.svg" ,
+      "title":  "Spa" ,
+      "dateRange":  "(from Fri, Sept 18, 2020 until Thu, Dec 31, 2020)" 
+    },
+    {
+      "icon":  "https://www.flaticon.com/svg/static/icons/svg/1872/1872643.svg ",
+      "title":  "Hot tub/Jacuzzi" ,
+      "dateRange":  "(from Fri, Sept 18, 2020 until Thu, Dec 31, 2020)" 
+    }
+  ]

@@ -1,0 +1,15 @@
+<div
+    class="destination-wrapper"
+    fxLayout=row
+    (click)="sendCityInStays(destination.city)">
+        <img class="example-option-img" aria-hidden [src]="destination.photo" height="40" width="40">
+        <div
+        fxFlexOffset=0.5em
+        class="destination-info"
+        fxLayout=column>
+            <small class="city-name">{{destination.city}}</small>
+            <small class="city-region">{{destination.region}}  </small> 
+            <small class="city-properties">{{destination.properties}} properties </small> 
+        </div>   
+</div>
+<hr>

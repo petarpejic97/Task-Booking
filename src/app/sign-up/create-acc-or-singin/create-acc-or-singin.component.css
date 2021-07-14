@@ -1,0 +1,74 @@
+.background{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    font-size: 1.8em;
+    text-align: center;
+    color: white;
+}
+button{
+    min-height: 2.5em;
+    border-radius: 3px;
+}
+.google{
+    background-color: white;
+    color: grey;
+}
+.facebook{
+    background-color: #4267B2;
+    color: white;
+}
+.email{
+    background-color: #247db1;
+    color: white;
+}
+.createacc{
+    background-color: white;
+    color: #4267B2;
+}
+.or{
+    text-align: center;
+    color: white;
+}
+p{
+    color: white;
+    z-index: 1;
+    text-align: center;
+    font-size: 0.8em;
+}
+a{
+    color: #0065a0;;
+}
+img, .bookingicon {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.bookingicon{
+    font-size: 1.8em;
+}
+.x-icon-white{
+    font-size: 1.5em;
+    color: white;
+}
+img{
+    height: 1.3em;
+}
+.buttontext{
+    font-size: 0.9em;
+}
+@media screen and (min-width:500px){
+    button{
+        min-height: 4em;
+        border-radius: 3px;
+    }
+    p{
+        color: white;
+        z-index: 1;
+        text-align: center;
+        font-size: 1.3em;
+    }
+}

@@ -1,0 +1,67 @@
+<div
+fxLayout=row>
+    <p
+    fxFlexOffset=3><b>Select rooms and guests</b></p>
+</div>
+<hr>
+<div 
+mat-dialog-content
+fxLayout=row>
+    <div
+    class="numbers"
+    fxLayout=column
+    fxFlexOffset=3
+    fxFlex=94>
+        <div
+        class="rooms">
+            <span>Rooms</span>
+            <div class="rooms-counter">
+                <button [disabled]="roomsNumber <= 1" (click)="decrement('roomsNumber')"><span class="btn-inside">-</span></button>
+                <span class="number" ><b>{{roomsNumber}}</b></span>
+                <button (click)="roomsNumber = roomsNumber +1">+</button>
+            </div> 
+        </div>
+        <div>
+            <hr>
+        </div>
+        <div
+        class="adults">
+            <span>Adults</span>
+            <div
+            class="adults-counter">
+                <button [disabled]="adultsNumber <= 1" (click)="decrement('adultsNumber')">-</button>
+                <span class="number" ><b>{{adultsNumber}}</b></span>
+                <button (click)="adultsNumber = adultsNumber + 1">+</button>
+            </div>
+        </div>
+        <div>
+            <hr>
+        </div>
+        <div
+        class="children-container">
+            <div class="children">
+                <div class="childdren-labels">
+                    <span>Children</span><br>
+                    <span class="description">Ages 0 - 17</span>
+                </div>
+                <div class="children-counter">
+                    <button [disabled]="childrenNumber <= 0"(click)="decrement('childrenNumber')">-</button>
+                    <span class="number" ><b>{{childrenNumber}}</b></span>
+                    <button (click)="childrenNumber = childrenNumber + 1">+</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<hr>
+<div 
+mat-dialog-actions>
+  <button 
+  class="apply-btn"
+  mat-raised-button
+  fxFlexOffset=3
+  fxFlex=94
+  cdkFocusInitial
+  (click)=sendRoomsAndGuestsToService()>APPLY</button>
+</div>

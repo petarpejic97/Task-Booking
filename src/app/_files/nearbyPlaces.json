@@ -1,0 +1,42 @@
+[
+    {
+      "object":  "Sports Hall of Fame Museum" ,
+      "distance":  "2400 ft"
+    },
+    {
+      "object":  "Croatian Maritime Museum" ,
+      "distance":  "1.2 mi"
+    },
+    {
+      "object":  "Mall of Split" ,
+      "distance":  "1.3 mi" 
+    },
+    {
+      "object":  "Split Bus Station" ,
+      "distance":  "1.4 mi" 
+    },
+    {
+      "object":  "Split Train Station" ,
+      "distance":  "1.4 mi"
+    },
+    {
+      "object":  "Diocletians Palace" ,
+      "distance":  "1.6 mi" 
+    },
+    {
+      "object":  "Park Mladezi Stadium" ,
+      "distance":  "1.9 mi "
+    },
+    {
+      "object":  "Jezinac Beach" ,
+      "distance":  "2.6 mi"
+    },
+    {
+      "object":  "Kastelet Beach",
+      "distance":  "2.8 mi" 
+    },
+    {
+      "object":  "Salona Archeological Park" ,
+      "distance": " 2.8 mi"
+    }
+  ]

@@ -1,0 +1,24 @@
+.header-background{
+    background-color: var(--dark-blue);
+}
+.content-wrapper{
+    align-items: center;
+    justify-content: space-between;
+    min-height: 3rem;
+    margin-right: 1em;
+}
+.menu-icon-white, .notification-icon-white, .bookingTitle{
+    color: white;
+}
+.comTitle{
+    color: #009fe3
+}
+.bookingTitle, .comTitle{
+    font-size: 1.2em;
+    font-weight: 500;
+}
+@media only screen and (min-width: 768px) {
+    .header-background{
+        min-height: 3.5rem;
+    }
+  }

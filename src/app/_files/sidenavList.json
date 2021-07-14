@@ -1,0 +1,112 @@
+[
+    {
+      "icon": "https://www.flaticon.com/svg/static/icons/svg/1828/1828391.svg",
+       "component": "Sign in or create account",
+       "class": "signin"
+    },
+    {
+      "icon": "https://www.flaticon.com/svg/static/icons/svg/884/884552.svg",
+       "component": "Trips",
+       "class": "trips"
+    },
+    {
+      "icon": "https://www.flaticon.com/svg/static/icons/svg/2611/2611152.svg",
+       "component": "Gift cards",
+       "class": "gift"
+    },
+    {
+      "icon": "https://www.flaticon.com/svg/static/icons/svg/1216/1216575.svg",
+       "component": "Wish lists",
+       "class": "wishlists"
+    },
+    {
+      "icon": "https://www.flaticon.com/svg/static/icons/svg/3522/3522280.svg",
+       "component": "Genius",
+       "class": "genius"
+    },
+    {
+      "icon": "https://www.flaticon.com/svg/static/icons/svg/1553/1553307.svg",
+       "component": "Reviews",
+       "class": "reviews"
+    },
+    {
+      "icon": "https://www.flaticon.com/svg/static/icons/svg/602/602295.svg",
+       "component": "Property list",
+       "class": "properylist"
+    },
+    {
+      "icon": ".././assets/blank_space.png",
+       "component": "Help and support",
+       "class": "helpandsupport"
+    },
+    {
+      "icon": "https://www.flaticon.com/svg/static/icons/svg/1828/1828940.svg",
+       "component": "Contact Customer Service",
+       "class": "contactservice"
+    },
+    {
+      "icon": "https://www.flaticon.com/svg/static/icons/svg/2892/2892956.svg",
+       "component": "Safety Resource Center",
+       "class": "safetycenter"
+    },
+    {
+      "icon": "https://www.flaticon.com/svg/static/icons/svg/1006/1006606.svg",
+       "component": "Dispute resolution",
+       "class": "disputeresolution"
+    },
+    {
+      "icon": "https://www.flaticon.com/svg/static/icons/svg/3618/3618078.svg",
+       "component": "Give App Feedback",
+       "class": "givefeedback"
+    },
+    {
+      "icon": ".././assets/blank_space.png",
+      "component": "Useful links",
+       "class": "sefullinks"
+    },
+    {
+      "icon": "https://www.flaticon.com/svg/static/icons/svg/1332/1332598.svg",
+       "component": "Deals",
+       "class": "deals"
+    },
+    {
+      "icon": "https://www.flaticon.com/svg/static/icons/svg/3729/3729453.svg",
+       "component": "Airport taxis",
+       "class": "airporttaxis"
+    },
+    {
+      "icon": "https://www.flaticon.com/svg/static/icons/svg/633/633596.svg",
+       "component": "Car Rentals",
+       "class": "carrentals"
+    },
+    {
+      "icon": "https://www.flaticon.com/svg/static/icons/svg/701/701334.svg",
+       "component": "Travel articles",
+       "class": "travelarticles"
+    },
+    {
+      "icon": "https://www.flaticon.com/svg/static/icons/svg/3820/3820102.svg",
+       "component": "Travel communities",
+       "class": "travelcommunities"
+    },
+    {
+      "icon": ".././assets/blank_space.png",
+      "component": "Settings and legal",
+       "class": "settingsandlegal"
+    },
+    {
+      "icon": "https://www.flaticon.com/svg/static/icons/svg/3524/3524636.svg",
+       "component": "Settings",
+       "class": "settings"
+    },
+    {
+      "icon": "https://www.flaticon.com/svg/static/icons/svg/2089/2089736.svg",
+       "component": "Share the app",
+       "class": "sharetheapp"
+    },
+    {
+      "icon": "https://www.flaticon.com/svg/static/icons/svg/3713/3713296.svg",
+       "component": "Legal",
+       "class": "legal"
+    }
+  ]

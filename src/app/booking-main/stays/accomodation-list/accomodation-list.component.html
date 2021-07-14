@@ -1,0 +1,109 @@
+<div
+class="background bg-color"
+fxLayout=column>
+    <div
+    class="header"
+    fxLayout=row>
+        <div
+        fxFlex=100
+        fxFlexOffset=0.5em
+        class="cityAndDate">
+            <span 
+              fxFlexOffset=2
+              class="material-icons arrow-back- icon-grey"
+              (click)=back()>
+                  arrow_back
+              </span>
+            <input 
+            fxFlex=100
+            type="text" 
+            fxFlexOffset=1em
+            [(ngModel)]="headerContent">
+        </div>
+    </div>
+    <div
+    fxLayout=row
+    class="sortFilterMap">
+        <div
+        class="sort"
+        fxFlex=33>
+            <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMXB0IiB2aWV3Qm94PSItNDIgMSA1MTEgNTExLjk5OTk5IiB3aWR0aD0iNTExcHQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iIzNkOWFlMiI+PHBhdGggZD0ibTExOC4zMjQyMTkgNDU3LjM3NXYtNDU3LjM3NWgtMzJ2NDU3LjM3NWwtNjMuMTk5MjE5LTYzLjE5OTIxOS0yMi42MjUgMjIuNjI1IDkwLjUxMTcxOSA5MC41MTE3MTljNi4yNSA2LjI0NjA5NCAxNi4zNzUgNi4yNDYwOTQgMjIuNjI1IDBsOTAuNTExNzE5LTkwLjUxMTcxOS0yMi42MjUtMjIuNjI1em0wIDAiLz48cGF0aCBkPSJtNDI4LjE0ODQzOCA5NS4xOTkyMTktOTAuNTExNzE5LTkwLjUxMTcxOWMtNi4yNS02LjI0NjA5NC0xNi4zNzUtNi4yNDYwOTQtMjIuNjI1IDBsLTkwLjUxMTcxOSA5MC41MTE3MTkgMjIuNjI1IDIyLjYyNSA2My4xOTkyMTktNjMuMTk5MjE5djQ1Ny4zNzVoMzJ2LTQ1Ny4zNzVsNjMuMTk5MjE5IDYzLjE5OTIxOXptMCAwIi8+PC9nPjwvc3ZnPg==" />
+            <span>Sort</span>
+        </div>
+        <hr>
+        <div
+        class="filter"
+        fxFlex=33>
+            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNDY0Ljk4IDQ2NC45OCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDY0Ljk4IDQ2NC45ODsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggc3R5bGU9ImZpbGw6IzExODVFMDsiIGQ9Ik0xOTIuMjYxLDQ2NC45OGMtMi42MTIsMC01LjIyNC0wLjUyMi03LjgzNy0yLjA5Yy00LjcwMi0yLjYxMi03LjgzNy03LjgzNy03LjgzNy0xMy41ODRWMjQ2LjA3Mw0KCUwzNy4wOTQsOTIuNDczYy0yLjYxMi0zLjEzNS00LjE4LTYuNzkyLTQuMTgtMTAuNDQ5VjE1LjY3M0MzMi45MTQsNi43OTIsMzkuNzA2LDAsNDguNTg4LDBoMzY3LjgwNA0KCWM4Ljg4MiwwLDE1LjY3Myw2Ljc5MiwxNS42NzMsMTUuNjczdjY2LjM1MWMwLDMuNjU3LTEuNTY3LDcuODM3LTQuMTgsMTAuNDQ5bC0xMzkuNDk0LDE1My42djE1Ny4yNTcNCgljMCw1Ljc0Ny0zLjEzNSwxMC45NzEtNy44MzcsMTMuNTg0bC04MC40NTcsNDUuOTc2QzE5Ny40ODYsNDY0LjQ1NywxOTQuODczLDQ2NC45OCwxOTIuMjYxLDQ2NC45OHogTTY0LjI2MSw3NS43NTVsMTM5LjQ5NCwxNTMuMDc4DQoJYzIuNjEyLDMuMTM1LDQuMTgsNi43OTIsNC4xOCwxMC40NDl2MTgyLjMzNWw0OS4xMS0yOC4yMTJ2LTE1My42YzAtMy42NTcsMS41NjctNy44MzcsNC4xOC0xMC40NDlsMTM5LjQ5NC0xNTMuNlYzMS4zNDdINjQuMjYxDQoJVjc1Ljc1NXoiLz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" />
+            <span>Filter</span>
+        </div>
+        <hr>
+        <div
+        class="map"
+        fxFlex=33>
+            <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjQ5NnB0IiB2aWV3Qm94PSIwIC0xMiA0OTYuMDAwMSA0OTYiIHdpZHRoPSI0OTZwdCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMjQ4IDEyOGMtMjIuMDg5ODQ0IDAtNDAtMTcuOTEwMTU2LTQwLTQwczE3LjkxMDE1Ni00MCA0MC00MCA0MCAxNy45MTAxNTYgNDAgNDBjLS4wMjczNDQgMjIuMDgyMDMxLTE3LjkxNzk2OSAzOS45NzI2NTYtNDAgNDB6bTAgMCIgZmlsbD0iIzc4YjllYiIvPjxwYXRoIGQ9Im0zMjggMjY0YzAtMTMuMjUzOTA2LTM1LjgxNjQwNi0yNC04MC0yNHMtODAgMTAuNzQ2MDk0LTgwIDI0IDM1LjgxNjQwNiAyNCA4MCAyNCA4MC0xMC43NDYwOTQgODAtMjR6bTAgMCIgZmlsbD0iIzc4YjllYiIvPjxnIGZpbGw9IiMxYTZmYjAiPjxwYXRoIGQ9Im00OTIgNDEuMDc4MTI1Yy0yLjQ3NjU2Mi0xLjQyNTc4MS01LjUyMzQzOC0xLjQyNTc4MS04IDBsLTEwOS4yMDcwMzEgNjIuNDAyMzQ0LTI4Ljg4MjgxMy03LjE5OTIxOS0zLjg4NjcxOCAxNS41MTk1MzEgMzIgOGMyIC41MTE3MTkgNC4xMjEwOTMuMjI2NTYzIDUuOTE0MDYyLS44MDA3ODFsMTAwLjA2MjUtNTcuMjA3MDMxdjMzMy41OTc2NTZsLTEwNS4xNzU3ODEgNjAuMDc0MjE5LTI1Mi44Nzg5MDctNjMuMTk5MjE5Yy0yLS41MDc4MTMtNC4xMjEwOTMtLjIxODc1LTUuOTE0MDYyLjc5Njg3NWwtMTAwLjAzMTI1IDU3LjE0NDUzMXYtMzMzLjU2NjQwNmwxMDUuMTc1NzgxLTYwLjEwNTQ2OSAyOC44Nzg5MDcgNy4xOTkyMTkgMy44OTA2MjQtMTUuNTE5NTMxLTMyLThjLTItLjUwMzkwNi00LjEyMTA5My0uMjE4NzUtNS45MTQwNjIuODAwNzgxbC0xMTIgNjRjLTIuNTAzOTA2IDEuNDI5Njg3LTQuMDQyOTY4OCA0LjEwMTU2My00LjAzMTI1IDYuOTg0Mzc1djM1MmMtLjAwMzkwNjI1IDIuODU5Mzc1IDEuNTE1NjI1IDUuNTA3ODEyIDMuOTkyMTg4IDYuOTQxNDA2IDIuNDc2NTYyIDEuNDI5Njg4IDUuNTMxMjUgMS40MzM1OTQgOC4wMDc4MTIuMDAzOTA2bDEwOS4yMDcwMzEtNjIuNDAyMzQzIDI1Mi44ODI4MTMgNjMuMTk5MjE5YzIgLjUwNzgxMiA0LjExNzE4Ny4yMjI2NTYgNS45MTAxNTYtLjc5Njg3NmwxMTItNjRjMi40ODA0NjktMS40MzM1OTMgNC4wMDM5MDYtNC4wODIwMzEgNC02Ljk0NTMxMnYtMzUyYy0uMDAzOTA2LTIuODU1NDY5LTEuNTI3MzQ0LTUuNDkyMTg4LTQtNi45MjE4NzV6bTAgMCIvPjxwYXRoIGQ9Im0yNDggMGMtMzcuNzY1NjI1LjAxNTYyNS03MS4zMDg1OTQgMjQuMTI4OTA2LTgzLjM1OTM3NSA1OS45MjE4NzUtMy4xMDE1NjMgOS4wMzUxNTYtNC42Njc5NjkgMTguNTIzNDM3LTQuNjQwNjI1IDI4LjA3ODEyNSAwIDQxLjQ0MTQwNiA2Mi43MTg3NSAxMzAuODAwNzgxIDc4LjIzODI4MSAxNTIuMjM4MjgxIDEuODQzNzUgMi40ODA0NjkgMy4wNDI5NjkgNC4wODIwMzEgMy4zNjMyODEgNC41NjI1IDEuNTA3ODEzIDIuMDE1NjI1IDMuODc4OTA3IDMuMTk5MjE5IDYuMzk4NDM4IDMuMTk5MjE5czQuODkwNjI1LTEuMTgzNTk0IDYuMzk4NDM4LTMuMTk5MjE5Yy4zMjAzMTItLjQ4MDQ2OSAxLjUyMzQzNy0yLjA4MjAzMSAzLjM2MzI4MS00LjU2MjUgMTQtMTkuMzU5Mzc1IDY2LjMyMDMxMi05My44Mzk4NDMgNzYuNDc2NTYyLTEzOC42MzY3MTkgMS4wODIwMzEtNC40NTcwMzEgMS42NzE4NzUtOS4wMTU2MjQgMS43NjE3MTktMTMuNjAxNTYyLS4wMzEyNS00OC41ODk4NDQtMzkuNDEwMTU2LTg3Ljk2ODc1LTg4LTg4em03MC44MDA3ODEgOTcuNzYxNzE5Yy03LjQ0MTQwNiAzNC42MzY3MTktNDguMzIwMzEyIDk3LjExNzE4Ny03MC44MDA3ODEgMTI4LjYzNjcxOS0yNC44MDA3ODEtMzQuNzk2ODc2LTcyLTEwNy4yNzczNDQtNzItMTM4LjM5ODQzOCAwLTM5Ljc2NTYyNSAzMi4yMzQzNzUtNzIgNzItNzJzNzIgMzIuMjM0Mzc1IDcyIDcyYy0uMDQ2ODc1IDMuMjg5MDYyLS40NDkyMTkgNi41NTg1OTQtMS4xOTkyMTkgOS43NjE3MTl6bTAgMCIvPjxwYXRoIGQ9Im0yNDggNDBjLTE5LjMxNjQwNi4wMzUxNTYtMzYuNzUzOTA2IDExLjU4NTkzOC00NC4zMjAzMTIgMjkuMzU5Mzc1LTIuNDE0MDYzIDUuOTE3OTY5LTMuNjY0MDYzIDEyLjI1LTMuNjc5Njg4IDE4LjY0MDYyNS0uMDg5ODQ0IDI1Ljc4MTI1IDIwLjE5OTIxOSA0Ny4wMjczNDQgNDUuOTU3MDMxIDQ4LjEyNSAyNS43NTc4MTMgMS4wOTc2NTYgNDcuNzgxMjUtMTguMzUxNTYyIDQ5Ljg4MjgxMy00NC4wNDY4NzUuMDgyMDMxLTEuMjc3MzQ0LjE2MDE1Ni0yLjcxODc1LjE2MDE1Ni00LjA3ODEyNSAwLTI2LjUwNzgxMi0yMS40OTIxODgtNDgtNDgtNDh6bTMyIDQ4LjE2MDE1NmMtLjA0Mjk2OSAxNy42NzE4NzUtMTQuNDA2MjUgMzEuOTY0ODQ0LTMyLjA3ODEyNSAzMS45MTc5NjktMTcuNjc1NzgxLS4wNDI5NjktMzEuOTY0ODQ0LTE0LjQwNjI1LTMxLjkyMTg3NS0zMi4wNzgxMjUtLjAxNTYyNS01LjEyNSAxLjIyMjY1Ni0xMC4xNzk2ODggMy42MDE1NjItMTQuNzE4NzUgNi43OTI5NjktMTMuMDg1OTM4IDIxLjY0ODQzOC0xOS44MzU5MzggMzUuOTc2NTYzLTE2LjM0Mzc1IDE0LjMyNDIxOSAzLjQ4ODI4MSAyNC40MTAxNTYgMTYuMzE2NDA2IDI0LjQyMTg3NSAzMS4wNjI1em0wIDAiLz48cGF0aCBkPSJtMjMyIDI1NmgzMnYxNmgtMzJ6bTAgMCIvPjxwYXRoIGQ9Im0yNzIgMjU2aDE2djE2aC0xNnptMCAwIi8+PHBhdGggZD0ibTIwOCAyNTZoMTZ2MTZoLTE2em0wIDAiLz48L2c+PC9zdmc+" />
+            <span>Map</span>
+        </div>
+    </div>
+    <div
+    fxLayout=row
+    class="content">
+        <div
+        fxLayout=row
+        class="second-header-wrapper">
+            <div
+            fxFlexOffset=1
+            fxFlex=98
+            fxLayout=column>
+                <div
+                fxFlex=100>
+                    <mat-expansion-panel
+                    (opened)="panelOpenState = true"
+                    (closed)="panelOpenState = false">
+                        <mat-expansion-panel-header>
+                        <mat-panel-title>
+                        <b>Coronavirus (COVID-19) support</b>
+                        </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <p class="extension-body-text">Check fot travel restrictions. Travel might only be permitted for certain purposes, and touristic travel in particular my not be allowed.</p>
+                        <p class="read-more"><b>Read more</b></p>
+                    </mat-expansion-panel>
+                </div>
+                <div
+                fxFlexOffset=2
+                class="commission-paind-container"
+                fxFlex=100>
+                    <div
+                    fxLayout=row
+                    class="commission-wrapper">
+                        <span class="material-icons-outlined icon-grey">
+                            info
+                        </span>
+                        <div
+                        fxLayout=column
+                        fxFlexOffset=1em>
+                            <span>
+                                Commission paind and other benefits may affect an accomodation's ranking
+                            </span>
+                            <span
+                            fxFlexOffset=1em
+                            class="small-bold learn-more">
+                                Learn more
+                            </span>
+                        </div>
+                        <span class="material-icons-outlined close-icon icon-grey">
+                            close
+                        </span>
+                    </div>
+                </div>
+                <div
+                fxLayout=column
+                *ngFor="let accomodation of filteredAccomodation">
+                    <app-accomodation-item
+                    fxFlexOffset=1.7
+                    [accomodation]=accomodation></app-accomodation-item>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

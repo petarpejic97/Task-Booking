@@ -1,0 +1,51 @@
+.info-container{
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+.user-comment > span{
+    margin-bottom: 0.5em;
+}
+.user-photo-container{
+    display: flex;
+}
+.user-photo{
+    width: 2.2em;
+    height: 2.2em;
+    border-radius: 100%;
+}
+.state-flag-image{
+    width: 1.2em;
+    height: .8em;
+}
+.state-info{
+    align-items: center;
+}
+hr{
+    background-color: rgb(219, 219, 219); 
+    width: 100%; 
+    border: 0; 
+    height: 1px;
+    margin-bottom: 1em;
+}
+@media only screen and (min-width: 768px){
+    div > span{
+        font-size: 1.1em;
+    }
+    .info-container{
+        margin-bottom: 1em;
+    }
+    .user-photo{
+        width: 2.5em;
+        height: 2.5em;
+    }
+    div > div > div:nth-child(2) > span{
+        font-size: 1em;
+    }
+    .state-flag-image{
+        width: 1.4em;
+        height: 1em;
+    }
+    hr{
+        margin-bottom: 1em;
+    }
+}

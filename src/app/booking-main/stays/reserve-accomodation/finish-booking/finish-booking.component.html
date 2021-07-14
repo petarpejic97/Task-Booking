@@ -1,0 +1,197 @@
+<div
+fxLayout=column
+class="background bg-color">
+    <div
+    class="card-information-container"
+    fxLayout=column>
+        <span
+        class="normal-bold">Credit Card Information</span>
+        <div
+        fxLayout=row>
+            <div
+            class="img-wrapper">
+                <img 
+                class="card-img american"
+                src="https://paymentweek.com/wp-content/uploads/2015/10/American-Express-copy.png" 
+                alt="">
+            </div>
+            <div
+            fxFlexOffset=1.5em
+            class="img-wrapper">
+                <img 
+                class="card-img visa"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/1200px-Visa_Inc._logo.svg.png" 
+                alt="">
+            </div>
+            <div
+            fxFlexOffset=1.5em
+            class="img-wrapper">
+                <img 
+                class="card-img mastercard"
+                src="https://banner2.cleanpng.com/20180806/hvc/kisspng-logo-mastercard-american-express-portable-network-hotel-painting-retail-store-painting-llc-5b6802737ed812.6901323015335430275196.jpg" 
+                alt="">
+            </div>
+        </div>
+        <div
+        fxFlexOffset=1.5em
+        fxLayout=row
+        class="credit-card-information">
+            <div
+            fxFlexOffset=1.5em
+            fxFlex=92
+            fxLayout=column>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Card Number</mat-label>
+                    <input matInput>
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Holder's Name</mat-label>
+                    <input matInput value="{{user.firstName}} {{user.lastName}}">
+                </mat-form-field>
+                <mat-form-field class="example-full-width expiration-date">
+                    <mat-label>Expiration Date</mat-label>
+                    <input matInput>
+                </mat-form-field>
+                <mat-checkbox 
+                class="example-margin matcheckboxcontainer">Save credit card securely to account for next time.</mat-checkbox>
+            </div>
+        </div>
+    </div>
+    <div
+    fxFlexOffset=2
+    fxLayout=row
+    class="card-not-charged-container">
+        <span class="material-icons-outlined info-icon">
+            info
+        </span>
+        <div
+        fxFlexOffset=1.5em
+        fxLayout=column>
+            <span
+            class="card-not-charged-title">Your card will not be charged.</span>
+            <span
+            fxFlexOffset=1.5em>We just need it to guarantee booking.</span>
+        </div>
+    </div>
+    <div
+    fxFlexOffset=2
+    fxLayout=row
+    class="your-info-container"
+    fxLayout=column>
+        <span
+        class="normal-bold">{{user.firstName}} {{user.lastName}}</span>
+        <span>{{user.email}}</span>
+        <span>{{user.address}}, {{user.zipCode}}</span>
+        <span>{{user.country}}</span>
+        <span>{{user.mobilePhone}}</span>
+    </div>
+    <hr>
+    <div
+    class="accomodation-book-container"
+    fxLayout=column>
+        <span
+        class="normal-bold">{{accomodation.title}}</span>
+        <div
+        fxFlexOffset=2
+        class=row>
+            <span>
+                <span
+                class="small-bold">
+                    Check in: 
+                </span>
+                {{fullStartDate.month}} {{fullStartDate.day}} {{fullStartDate.year}}
+            </span>
+            <span>
+                <span
+                class="small-bold">
+                    Check out: 
+                </span>
+                {{fullEndDate.month}} {{fullEndDate.day}} {{fullEndDate.year}}
+            </span>
+        </div>
+        <div
+        class=row>
+            <span>
+                <span
+                class="small-bold">
+                    Rooms 
+                </span>
+                {{accomodation.roomsNum}}
+            </span>
+            <span>
+                <span
+                class="small-bold">
+                    Guests:
+                </span>
+                {{tripDetail.adultsNumber}} adults
+            </span>
+        </div>
+        <div
+        fxLayout=row
+        fxFlexOffset=2
+        class="price-wrapper">
+            <div
+            fxLayout=column>
+                <span
+                class="normal-bold">Final price: € {{sumPrice}}</span>
+                <span
+                class="description">
+                    Additional charges may apply
+                </span>
+            </div>
+            <span
+            class="see-more">
+                See more
+                <span class="material-icons">
+                    keyboard_arrow_down
+                </span>
+            </span>
+        </div>
+    </div>
+    <div
+    fxFlexOffset=2
+    class="promo-code-container">
+         <span
+         class="promo-code-text">Add a promo code </span>
+    </div>
+    <div
+    fxFlexOffset=2
+    fxLayout=row
+    class="no-payment-container">
+        <span class="material-icons-outlined info-icon-no-payment">
+            info
+        </span>
+        <div
+        fxFlexOffset=1.5em
+        fxLayout=column>
+            <span
+            class="no-payment-title">No payment needed today.</span>
+            <span
+            fxFlexOffset=1.5em>You'll pay during your stay.</span>
+        </div>
+    </div>
+    <div
+    class="booking-statement-condition-container"
+    fxLayout=row>
+        <span
+        class="statement-text">Your booking is directly with {{accomodation.title}}. By completing this booking you agree to the 
+            <span class="blue-statement"> Booking.com privacy statement, general terms & conditions</span>
+        </span>
+    </div>
+    <div
+    class="package-info-container"
+    fxLayout=column>
+        <span
+        class="package-info-title normal-bold">
+            Info About the Package Travel Directive
+        </span>
+        <span
+        fxFlexOffset=2
+        class="package-info-text">
+            If you book any additional travel services during the same visit to Booking.com, the travel service may become part of a Linked Travel Arrangement.
+            In that case, Booking.com has, as required by EU law, protection in place to refund your payments to Booking.com for services not performed because of our insolvency.
+            We grant this protection regardless of your booking location. Note: This does not provide a refund in the event of the insolvency of the relevant service provider.
+            <span class="more-info"> Click here for more info.</span>
+        </span>
+    </div>
+</div>

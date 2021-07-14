@@ -1,0 +1,84 @@
+<app-header-pick-stay></app-header-pick-stay>
+<div
+fxLayout=column
+class="background bg-color">
+    <div
+    fxLayout=column
+    class="cancellation-policy-container">
+        <div
+        fxLayout=column>
+            <div
+            class="icon-title-wrapper"
+            fxLayout=row>
+                <mat-icon 
+                class="mat-icon material-icons info-icon-brown"> 
+                    help_outline 
+                </mat-icon>
+                <span
+                fxFlexOffset=1.5em
+                class="cancellation-policy-title"><b>Find a cancellation policy that works for you</b></span>
+            </div>
+            <div
+            fxLayout=row>
+                <mat-icon
+                class="mat-icon material-icons info-icon-background"> 
+                    help_outline 
+                </mat-icon>
+                <div
+                fxFlexOffset=1.5em
+                fxLayout=column>
+                    <span
+                    fxFlexOffset=1.5em
+                    class="cancellation-policy-text">Starting April 6, 2020, your chosen cancellation policy will apply
+                        , regardless of the coronavirus. We recommend booking an oprion with free
+                        cancellation in case your travel plans change.
+                    </span>
+                    <span
+                    fxFlexOffset=1.5em
+                    class="read-more"><b>Read more</b></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div
+    class="stays-container"
+    fxLayout=column>
+        <div
+        fxLayout=row
+        fxFlexOffset=1.5em
+        *ngFor = "let stay of accomodation.stays">
+            <app-stay-item
+            fxFlex=100
+            [stay]=stay
+            [isSelected] = isSelected
+            (showBackdrop) = "openDialog()"
+            (changeSelected)="selectStay(stay)"></app-stay-item>
+        </div>
+    </div>
+    <div
+    class="footer"
+    fxLayout=column>
+        <div
+        class="footer-content-wrapper"
+        fxFlex=100
+        fxLayout=row>
+            <div
+            fxLayout=column
+            class="footer-text">
+                <span 
+                class="normal-bold"
+                [style.color]="fitsColor">{{fitsText}} </span>
+                <span 
+                class="fit-subtext">{{fitsSubText}}</span>
+            </div>
+            <div
+            class="btn-reserve-wrapper">
+                <button 
+                fxFlex=100
+                class="btn-reserve"
+                (click)="reserveAccomodation()"
+                mat-raised-button>Reserve</button>
+            </div>
+        </div>
+    </div>
+</div>

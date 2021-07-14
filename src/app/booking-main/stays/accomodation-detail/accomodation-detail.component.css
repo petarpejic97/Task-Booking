@@ -1,0 +1,516 @@
+.header-accomodation-detail{
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    min-height: 3.5em;
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.2);
+}
+.search-bar-container{
+    margin-top: 3.5em;
+    background-color: var(--dark-blue);
+    padding: 1em 0;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease-in-out;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+.expansion-wrapper{
+    margin-top: 8em;
+}
+.white-background-wrapper{
+    background-color: white;
+    padding: .3em;
+    align-items: center;
+    border-radius: 4px;
+}
+.grey-search-icon, .grey-property-search{
+    color: rgb(187, 183, 183);
+}
+.grey-property-search{
+    font-size: 0.9em;
+}
+.mat-expansion-panel-header{
+    border-radius: 0px;
+    height: 3em;
+}
+.mat-expansion-panel:not([class*=mat-elevation-z]){
+    box-shadow: none;
+}
+.mat-expansion-panel{
+    border-radius: 0;
+}
+.read-more{
+    color: #0346a5;
+}
+.img-wrapper{
+    background-color: white;
+    display: grid!important;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 50% 45%;
+    grid-gap: 0.2em
+}
+.photo1{
+    grid-column: 1/4;
+}
+.photo2{
+    grid-column: 4/7;
+}
+.photo3{
+    grid-column: 1/3;
+}
+.photo4{
+    grid-column: 3/5;
+}
+.photo5{
+    grid-column: 5/7;
+    position: relative;
+}
+.photo5 > img {
+    filter: brightness(0.6);
+}
+.text-rest-images{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: large;
+    font-weight: 500;
+    z-index: 1;
+}
+.img-wrapper > div > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.img-wrapper > img {
+    width: 100%;
+}
+.title-rate-container{
+    align-items: center;
+    padding-bottom: 0!important;
+    padding-top: 1em!important;
+    margin-top: -2%;
+}
+.title-rate{
+    justify-content: space-between;
+}
+.title-rate-container > .title{
+    font-size: larger;
+}
+.star-container-100{
+    background-color: white;
+    padding-bottom: 3%;
+}
+.rate-back{
+    width: 2em;
+    height: fit-content;
+    background-color: #0346a5;
+    border-radius: 3px;
+    border-bottom-left-radius: 0;
+    margin-right: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 0.2em;
+}
+.rate{
+    color: white;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+.star-container{
+    display: flex;
+    align-items: center;
+}
+.yellow-icon{
+    color: #ffbc00!important;
+    margin-left: -3%;
+}
+.thumb-up{
+    font-size: 0.8em;
+    height: fit-content;
+    color: white;
+    background-color: #ffbc00;
+    padding: 3px;
+    border-radius: 2px;
+    margin-left: 5%;
+}
+/*backgrounds*/
+.information-container,
+.title-rate-container,
+.covid-effect-container,
+.whole-apartment-container,
+.travel-safely-container,
+.comments-conteiner,
+.descrption-container,
+.facilities-container,
+.sustainability-container,
+.policies-container,
+.children-extra-beds-container,
+.important-information-container,
+.nearby-place-wrapper,
+.transport-information-container,
+.around-property-container,
+.all-distances-wrapper,
+.some-info-container,
+.button-container{
+    background-color: white;
+    padding: 1.5em 1.5em;
+}
+
+.information-container{
+    width: 100%;
+}
+.information{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 100%;
+}
+.price{
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+.description{
+    font-size: 1em!important;
+}
+.done-icon-green{
+    font-weight: bold;
+    color: green;
+}
+.city-map{
+    height: 100%; /*roditeljski je postavljen na 25%*/
+}
+.map-container{
+    background-color: white;
+    padding-bottom: 5%;
+}
+.title-and-close{
+    justify-content: space-between;
+}
+.close-icon-grey{
+    margin-right: 1.5em;
+}
+.sign-in-container{
+    background-color: white;
+}
+.sign-in{
+    color: #4267B2;
+}
+.loyality-program{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    padding-bottom: 1em;
+}
+hr{
+    background-color: rgb(219, 219, 219); 
+    width: 100%; 
+    border: 0; 
+    height: 1px;
+    margin: 0;
+}
+.genius{
+    color: #0346a5;
+    margin-right: 1.5em;
+}
+.check-in-date, .check-out-date{
+    padding: 5% 0;
+    background-color: white;
+    box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+.day-date{
+    align-self: center;
+    font-size: x-large;
+    font-weight: 500;
+}
+.month-and-year{
+    font-size: 0.9em;
+}
+.day{
+    margin-bottom: -4%;
+}
+.health-icon{
+    width: 100%;
+}
+.travel-safely-title{
+    font-size: large;
+    font-weight: 500;
+}
+.all-details{
+    font-weight: 500;
+    color: #0346a5;
+}
+.review-number{
+    color: rgb(58, 58, 58);
+}
+.second-rate-back{
+    border-radius: 5px;
+    align-items: center;
+    height: 1.15em;
+    border-bottom-left-radius: 0;
+}
+.rate-container{
+    align-items: center;
+    padding-bottom: 1.5em;
+}
+.excellent-word{
+    margin-top: -2%;
+}
+/* .users-comments{
+    padding: 1em 0;
+} */
+.comments-title{
+    font-size: large;
+    font-weight: 500;
+    margin-bottom: 1.5em;
+}
+.see-all-reviews{
+    color: #4267B2;
+    padding-bottom: .5em;
+}
+.travel-asking{
+    background-color: white;
+}
+.travelers-asking{
+    font-size: medium;
+    font-weight: 500;
+}
+.ask-item{
+    padding-top: 1.5em;
+}
+.see-all-qeustions-container{
+    padding: 3% 0;
+    justify-content: space-between;
+}
+.see-all-questions{
+    color: #4267B2;
+    font-weight: 500;
+}
+.arrow-right-icon-grey{
+    color: rgb(131, 131, 131);
+    margin-right: 1.5em;
+}
+.btn-ask-question,
+.btn-yes,
+.btn-no{
+    border-radius: 2px;
+    border-color: #0346a5;
+    color: #0346a5
+}
+.replies-time{
+    justify-content: center;
+}
+.button-ask-question-container{
+    padding-bottom: 5%;
+}
+.description-part-title{
+    font-size: larger;
+    font-weight: bold;
+}
+.read-full-description{
+    color: #0346a5;
+}
+.facilities-title{
+    font-size: large;
+    font-weight: bold;
+}
+.see-all-facilities,
+.see-details,
+.see-all-policies{
+    color: #0346a5;
+    font-weight: bold;
+}
+.sustainability-image {
+    width: 1.3em;
+}
+.sustainability-title{
+    font-size: large;
+    font-weight: bold;
+}
+.free{
+    height: fit-content;
+    background-color: green;
+    padding: 3px;
+    color: white;
+    font-weight: 500;
+    border-radius: 2px;
+}
+.policies-title{
+    font-size: large;
+    font-weight: bold;
+}
+.children-extra-beds-title{
+    font-size: large;
+    font-weight: bold;
+}
+.see-full-policies{
+    color: #0346a5;
+    font-weight: bold;
+}
+.important-information-title{
+    font-size: large;
+    font-weight: bold;
+}
+.read-more{
+    color: #0346a5;
+    font-weight: bold;
+}
+.nearby-place-title-wrapper{
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+.nearby-place-title{
+    font-size: medium;
+    font-weight: bold;
+}
+.museum-icon{
+    width: 1.3em;
+}
+.transport-information-icon{
+    width: 1.3em;
+}
+.transport-information-title-wrapper{
+    justify-content: space-between;
+}
+.transport-information-title,
+.around-property-title{
+    font-size: medium;
+    font-weight: bold;
+}
+.around-property-icon{
+    width: 1.3em;
+}
+.around-property-title-wrapper,
+.object-and-distance{
+    justify-content: space-between;
+}
+.some-info-question{
+    font-size: medium;
+    font-weight: bold;
+}
+.some-info-title-wrapper{
+    align-items: center;
+}
+.close-icon{
+    color: rgb(131, 131, 131)!important;
+    margin-left: auto;
+    font-size: xx-large;
+}
+.question-white-icon{
+    color: white;
+}
+.button-icon{
+    position: absolute;
+    left: 4%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.btn-share-property,
+.btn-send-link{
+    line-height: 3em;
+    border-radius: 2px;
+    border-color: #0346a5;
+    color: #0346a5
+}
+.example-button-row{
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 1%;
+    
+}
+.button-container{
+    margin-bottom: 3em;
+}
+.btn-select-rooms{
+    background-color: #4267B2;
+    color: white;
+    border-radius: 2px;
+    line-height: 3em;
+}
+@media only screen and (min-width: 768px){
+    :host{
+       font-size: 1.1em; 
+    }
+    .search-bar-container{
+        margin-top: 4em;
+    }
+    .text-rest-images{
+        font-size: 2em;
+    }
+    .expansion-wrapper{
+        margin-top: 8.5em;
+    }
+    .title-rate-container{
+        padding: 0;
+    }
+    .title-rate-container > .title{
+        font-size: large;
+    }
+    .rate-back{
+        padding: 0.6em 0.3em;
+    }
+    .star-container > i {
+        font-size: 28px;
+    }
+    .thumb-up{
+        font-size: 24px!important;
+    }
+    .price{
+        font-size: 1.4em;
+    }
+    .check-in-date > span,
+    .check-out-date > span{
+        font-size: xx-large;
+    }
+    .month-and-year{
+        font-size: 1em;
+    }
+    div.travel-safely-container > div > span{
+        max-width: 3em!important;
+    }
+    .travel-safely-title{
+        font-size: 1.5em;
+    }
+    .see-all-reviews{
+        padding-bottom: 1.5em;
+    }
+    .travelers-asking,
+    .nearby-place-title,
+    .transport-information-title,
+    .around-property-title{
+        font-size: large;
+    }
+    div.button-ask-question-container > div:nth-child(1) > button{
+        height: 3.33em;
+    }
+    .museum-icon,
+    .around-property-icon{
+        width: 1.6em;
+    }
+    div.some-info-title-wrapper > span:nth-child(1),
+    div.some-info-container > div:nth-child(2) > span{
+        font-size: 28px;
+    }
+    div.some-info-container > div:nth-child(2) > button.mat-focus-indicator.btn-yes.mat-stroked-button.mat-button-base{
+        height: 3.33em;
+    }
+    .btn-share-property,
+    div.button-container > div:nth-child(2) > button,
+    div.example-button-row > button{
+        line-height: 3.33em; 
+    }
+    .some-info-question{
+        font-size: large;
+    }
+    span.normal-bold{
+        font-size: 1.1em;
+    }
+    span.small-bold{
+        font-size: 1em; 
+    }
+}

@@ -1,0 +1,39 @@
+.header-background{
+    background-color: var(--dark-blue);
+    min-height: 3rem;
+}
+.content-wrapper{
+    justify-content: center;
+    align-items: center;
+    margin-right: 1em;
+}
+.stays-icon-white, 
+.car-icon-white, 
+.taxi-icon-white,
+.stays, 
+.car-rental,
+.taxi{
+    color: white;
+}
+.taxi-icon-white{
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+.stays-item-container, 
+.car-rental-item-container,
+.taxi-item-container{
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+    border-radius: 2em;
+}
+.stays-item-container{
+    padding:1em 0;
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+@media only screen and (min-width: 768px) {
+    .header-background{
+        min-height: 3.5rem;
+    }
+  }

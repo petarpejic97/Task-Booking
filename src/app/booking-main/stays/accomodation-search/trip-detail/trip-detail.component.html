@@ -1,0 +1,75 @@
+<div
+class="trip-detail"
+fxLayout=column>
+    <div
+    fxLayout=row
+    class="enter-destination"
+    routerLink='../search-destination'>
+        <div
+        class="enter-destination-container">
+            <span 
+            fxFlexOffset=5
+            class="material-icons search-icon-grey">
+                search
+            </span>
+        </div>
+        <div
+        fxFlex=100>
+            <span 
+            class="destination-text small-bold">
+                {{tripDetail.destination}}
+            </span>
+        </div>
+    </div>
+    <div
+    fxLayout=row
+    class="enter-date">
+    <mat-form-field (click)="picker.open()">
+        <div
+        class="icon-container">
+            <span 
+            fxFlexOffset=5
+            class="material-icons calendar-icon-grey">
+                date_range
+            </span>
+        </div>
+        <mat-date-range-input 
+        [formGroup]="range"
+        [rangePicker]="picker">
+            <input matStartDate formControlName="start"  startDate style="outline: none;">
+            <input matEndDate formControlName="end"  style="outline: none;">
+        </mat-date-range-input>
+        <mat-date-range-picker touchUi #picker></mat-date-range-picker>
+    </mat-form-field>
+    </div>
+    <div
+    fxLayout=row
+    class="enter-people"
+    (click)="openDialog()">
+        <div
+        class="enter-people-container">
+            <span 
+            fxFlexOffset=5
+            class="material-icons person-icon-grey">
+                perm_identity
+            </span>
+        </div>
+        <div
+        fxFlex=100>
+            <span
+            class="persons-text small-bold">
+            {{tripDetail.roomNumber}} room ⋅ {{tripDetail.adultsNumber}} adults ⋅ {{tripDetail.childrenNumber}} children
+            </span>
+        </div>
+    </div>
+    
+    <div>
+        <button
+        fxFlex=100
+        class="btn-search" mat-raised-button
+        routerLink='../accomodation-list/{{tripDetail.destination}}'
+        (click)="sendDataToSearchResults()">
+            <span class="buttontext"> Search</span>
+        </button>
+    </div>
+</div>

@@ -1,0 +1,77 @@
+.background{
+    width: 100%;
+    min-height: 100%;
+    padding-bottom: 1%;
+}
+.read-more{
+    color: #0346a5;;
+}
+.cancellation-policy-container{
+    margin-top: 3em;
+    background-color: rgb(255, 234, 195);
+    padding: 1.5em 0;
+    border-top: orange 1px solid;
+    border-bottom: orange 1px solid;
+}
+div > div.cancellation-policy-container > div{
+    margin-left: 1.5em;
+}
+.info-icon-brown{
+    color: brown;
+}
+.icon-title-wrapper{
+    align-items: center;
+}
+.info-icon-background{
+    color: rgb(255, 234, 195);
+}
+.footer{
+    background-color: white;
+    height: 3.8rem;
+    padding: 2% 4%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px rgb(204, 204, 204) solid;
+}
+.footer-content-wrapper{
+    justify-content: space-between;
+    align-items: center;
+}
+.fit-subtext{
+    font-size: smaller;
+}
+.stays-container{
+    margin-bottom: 4em;
+}
+.btn-reserve-wrapper{
+    width: 60%!important;
+    height: 3.5em;
+}
+.mat-icon{
+    height: fit-content;
+}
+.btn-reserve{
+    background-color: #4267B2;
+    color: white;
+    border-radius: 2px;
+    box-shadow: none;
+    height: -webkit-fill-available;
+}
+@media only screen and (min-width: 768px){
+    .cancellation-policy-container{
+        margin-top: 4.6em;
+    }
+    .material-icons{
+        font-size: 28px;
+    }
+    .cancellation-policy-title,
+    .cancellation-policy-text,
+    .read-more,
+    .normal-bold{
+        font-size: 1.1em;
+    }
+    .fit-subtext{
+        font-size: small;
+    }
+}

@@ -1,0 +1,113 @@
+.trip-detail{
+    border: 0.3em solid #FEBA02;
+    border-radius: 3px;
+}
+.enter-destination-container, .enter-people-container{
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+}
+.enter-destination, 
+.enter-date, 
+.enter-people{
+    height: 3.5em;
+    justify-content: center;
+    border-bottom: 0.3em solid #FEBA02;
+    align-items: center;
+
+}
+.search-icon-grey, .person-icon-grey, .calendar-icon-grey{
+    color:rgba(0, 0, 0, 0.54);
+}
+.btn-search{
+    color: white;
+    background-color: #247db1;
+    height: 3.5em;
+}
+.mat-raised-button{
+    border-radius: 0;
+}
+
+::ng-deep .mat-raised-button:not([class*=mat-elevation-z]), .mat-expansion-panel:not([class*=mat-elevation-z]){
+    box-shadow: none;
+}
+/*calendar field*/
+.icon-container{
+    position: relative;
+    height: 40px;
+    width: 40px;
+}
+.calendar-icon-grey{
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+::ng-deep .mat-datepicker-dialog > .mat-dialog-container{
+    padding: 24px!important;
+}
+::ng-deep .enter-date .mat-form-field-infix{
+    border-top: 0!important;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    padding: 0!important;
+    margin-left: 0;
+}
+::ng-deep .enter-date .mat-form-field-appearance-legacy{
+    padding: 0!important;
+}
+::ng-deep .enter-date  .mat-form-field-wrapper{
+    padding: 0!important;
+    height: 100%;
+}
+::ng-deep .mat-form-field-flex{
+    height: 100%;
+}
+::ng-deep div.enter-date > mat-form-field > div > div.mat-form-field-underline{
+    display: none!important;
+}
+::ng-deep .enter-date .mat-date-range-input-container {
+    font-weight: 500;
+    font-size: small;
+}
+.date-label{
+    width: 100%;
+}
+
+/* popup calendar*/
+
+::ng-deep .cdk-global-overlay-wrapper{
+    justify-content: center!important;
+    align-items: flex-end!important;
+}
+::ng-deep .mat-datepicker-content {
+    height: 80vh;
+}
+::ng-deep .mat-datepicker-dialog{
+    max-width: none!important;
+    width: 100%!important;
+}
+::ng-deep .mat-calendar{
+    width: 100%!important;
+}
+@media only screen and (min-width: 768px) {
+    .enter-destination, 
+    .enter-date, 
+    .enter-people{
+        height: 4em;
+    }
+    ::ng-deep div > div.enter-destination > div.enter-destination-container > span,
+    ::ng-deep div.enter-date > mat-form-field > div > div.mat-form-field-flex.ng-tns-c159-3 > div > div > span,
+    ::ng-deep div.enter-people > div.enter-people-container > span{
+        font-size: 2em;
+    }
+    
+    ::ng-deep div.enter-destination > div:nth-child(2) > span,
+    ::ng-deep .enter-date .mat-date-range-input-container,
+    ::ng-deep div.enter-people > div:nth-child(2) > span{
+        font-size: 1em;
+    }
+}

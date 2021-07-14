@@ -1,0 +1,25 @@
+<div
+    class="footer-reserve"
+    fxLayout=column>
+        <div
+        class="footer-content-wrapper"
+        fxFlex=100
+        fxLayout=row>
+            <div
+            fxLayout=column
+            class="footer-text">
+                <span 
+                class="normal-bold">{{sumPrice}} €</span>
+                <span 
+                class="fit-subtext">Includes taxes and charges</span>
+            </div>
+            <div
+            class="btn-next-step-wrapper">
+                <button 
+                fxFlex=100
+                class="btn-next-step"
+                (click)=nextStep()
+                mat-raised-button>{{buttonText}}</button>
+            </div>
+        </div>
+    </div>

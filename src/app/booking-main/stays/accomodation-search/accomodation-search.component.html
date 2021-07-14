@@ -1,0 +1,174 @@
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="over">
+      <div
+      fxLayout=column>
+        <div
+        fxFlexOffset=1.5em
+        *ngFor="let item of sidenavList">
+        <app-sidenav-item
+        [sidenavitem]="item"></app-sidenav-item>
+        </div>
+      </div>
+    </mat-drawer>
+    <div 
+    fxLayout=column
+    class="example-sidenav-content">
+        <app-header
+        [inputSideNav]="drawer"
+        class=mainheader></app-header>
+        <app-header-items-optons
+        class="itemoptions"></app-header-items-optons>
+        <div
+        class="background"
+        fxLayout=column>
+            <div
+            fxFlex=90
+            class="example-button-container"
+            fxLayoutAlign="end center" >
+                <button 
+                mat-fab color="primary" 
+                aria-label="Example icon button with a delete icon">
+                  <mat-icon>mic_none</mat-icon>
+                </button>
+            </div>
+            <div
+            fxLayout=row
+            class="second-header-wrapper">
+                <div
+                fxFlex=100>
+                    <mat-expansion-panel
+                    (opened)="panelOpenState = true"
+                    (closed)="panelOpenState = false">
+                        <mat-expansion-panel-header>
+                        <mat-panel-title>
+                        <b>Coronavirus (COVID-19) support</b>
+                        </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <p>Check fot travel restrictions. Travel might only be permitted for certain purposes, and touristic travel in particular my not be allowed.</p>
+                        <p class="read-more"><b>Read more</b></p>
+                    </mat-expansion-panel>
+                </div>
+            </div>
+            <div
+            fxLayout=row
+            class="search-box"
+            fxFlexOffset=2>
+                <div
+                fxLayout=column
+                fxFlexOffset=1.5em
+                fxFlex=100
+                class="search-container">
+                    <div
+                    fxFlexOffset=1.5em>
+                        <span><b>Search</b></span>
+                    </div>
+                    <div>
+                        <p>Hotels, motels, apartments and more...</p>
+                    </div>
+                    <app-trip-detail></app-trip-detail>
+                    <div
+                    fxLayout=row
+                    fxFlexOffset=1.5em
+                    class="checkbox-background">
+                        <mat-checkbox 
+                        labelPosition=before
+                        fxFlex=100
+                        class="checkbox-work normal-bold">I'm traveling for work
+                        </mat-checkbox>
+                    </div>
+                </div>
+            </div>
+            <div
+            fxLayout=row
+            class="todays-deals-box"
+            fxFlexOffset=2>
+                <div
+                fxLayout=column
+                fxFlexOffset=1.5em>
+                    <div
+                    fxLayout=row
+                    fxFlexOffset=1.5em>
+                        <span class="normal-bold">Today's deals</span>
+                    </div>
+                    <div
+                    fxLayout=row
+                    fxFlexOffset=1.5em>
+                        <img 
+                        class="img-todays-deal"
+                        src="https://cf.bstatic.com/static/img/deals/index_banner_getaway2020/312c784f761fc4f1e315742e93b9fa10d96ea67d.jpg" alt="best-deal">
+                    </div>
+                    <div
+                    fxLayout=row
+                    fxFlexOffset=3>
+                        <span class="small-bold">Travel offer</span>
+                    </div>
+                    <div
+                    fxLayout=row
+                    fxFlexOffset=2>
+                        <span class="date-count description">15% off stays June 1 - Jan. 4</span>
+                    </div>
+                </div>
+            </div>
+            <div
+            fxFlexOffset=2
+            fxLayout=column
+            class="finish-booking-container"
+            *ngIf="visbility === '1'">
+                <div
+                fxFlexOffser=4
+                fxLayout=row
+                class="finish-title-container">
+                    <span
+                    class="normal-bold">Finish your booking!</span>
+                    <span
+                    class="material-icons close-icon"
+                    (click)=hideFinishBooking()>close</span>
+                </div>
+                <div
+                class="image-rate-container">
+                    <div
+                    class="rate-back">
+                        <span class="rate">{{accomodation.rate}}</span>
+                    </div>
+                    <img 
+                    class="finish-accomodation-image"
+                    src="{{accomodation.photos[0]}}" alt="">
+                </div>
+                <div
+                class="bottom-finish-container"
+                fxLayout=row>
+                    <div
+                    fxLayout=column>
+                        <span
+                        class="normal-bold">{{accomodation.title}}</span>
+                        <span
+                        fxFlexOffset=2>Starting from: € {{sumPrice}}</span>
+                    </div>
+                    <div
+                    fxLayout=row>
+                        <div
+                        fxLayout=column>
+                            <span
+                            class="normal-bold day-date">{{startDay}}</span>
+                            <span>{{startMonth}}</span>
+                        </div>
+                        <hr
+                        class="hr-date">
+                        <div
+                        fxLayout=column>
+                            <span
+                            class="normal-bold day-date">{{endDay}}</span>
+                            <span>{{endMonth}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+            fxFlexOffset=2
+            *ngFor="let destinationContainer of destinationsContainers">
+                <app-destination-container
+                [destinationContainer]=destinationContainer></app-destination-container>
+            </div>
+        </div>
+    </div>
+</mat-drawer-container>

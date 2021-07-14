@@ -1,0 +1,47 @@
+.header-background{
+    background-color: var(--dark-blue);
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+}
+.content-wrapper{
+    align-items: center;
+    min-height: 3rem;
+    margin-right: 1.5em;
+}
+.back-icon-white, 
+.money-icon-white, 
+.share-icon-white, 
+.more-icon-white,
+.accTitle,
+.accDate{
+    color: white;
+}
+.back-arrow-container,
+.favorite-share-more-container{
+    display: flex;
+}
+.favorite-share-more-container{
+    justify-content: space-between;
+    margin-left: auto;
+}
+.accDate{
+    font-size: small;
+}
+@media only screen and (min-width: 768px){
+    .content-wrapper{
+        min-height: 4rem;
+    }
+    .material-icons{
+        font-size: 28px;
+    }
+    .money-icon-white{
+        margin-left: 2vw;
+    }
+    .accTitle{
+        font-size: 1.1em;
+    }
+    .accDate{
+        font-size: inherit;
+    }
+}

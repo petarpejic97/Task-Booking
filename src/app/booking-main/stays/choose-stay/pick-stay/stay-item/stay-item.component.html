@@ -1,0 +1,195 @@
+<div
+fxFlexOffset=1
+fxFlex=98
+class=background-item-pick-stay
+fxLayout=column>
+    <div
+    fxFlexOffset=1em
+    class="title-wrapper"
+    fxLayout=row>
+        <span 
+        class="title"><b>{{stay.title}}</b></span>
+        <mat-icon 
+        fxFlexOffset=1em
+        class="mat-icon material-icons-outlined info-icon-blue"> 
+            info 
+        </mat-icon>
+    </div>
+    <div
+    fxFlexOffset=1em
+    class="price-wrapper"
+    fxLayout=row>
+        <span>Price for: </span>
+    </div>
+    <div
+    fxFlexOffset=2
+    fxLayout=row
+    class="bed-wrapper">
+        <span class="material-icons">
+            single_bed
+        </span>
+        <div
+        fxLayout=row>
+            <div
+            *ngIf="stay.kingBed">
+                <span>
+                    {{stay.kingBed}} king bed
+                </span>
+            </div>
+            <div
+            *ngIf="stay.queenBed">
+                <span>
+                    {{stay.queenBed}} queen bed
+                </span>
+            </div>
+            <div
+            *ngIf="stay.futonBed">
+                <span>
+                    {{stay.futonBed}} futon bed
+                </span>
+            </div>
+        </div>
+    </div>
+    <div
+    fxFlexOffset=2
+    fxLayout=row>
+        <span>
+            Size: {{stay.size}} ft<sup>2</sup>
+        </span>
+    </div>
+    <div
+    fxFlexOffset=2
+    fxLayout=row
+    *ngIf="stay.firstStayInfo"
+    class="propertyAndvantages">
+        <span 
+        class="material-icons material-icons-outlined advantage-icon">
+            {{getAdvantagePropertyIcon(stay.firstStayInfo)}}
+        </span>
+        <span
+        fxFlexOffset=2>
+            {{stay.firstStayInfo}}
+        </span>
+    </div>
+    <div
+    fxFlexOffset=2
+    fxLayout=row
+    *ngIf="stay.secondStayInfo"
+    class="propertyAndvantages">
+        <span 
+        class="material-icons material-icons-outlined advantage-icon">
+            {{getAdvantagePropertyIcon(stay.secondStayInfo)}}
+        </span>
+        <span
+        fxFlexOffset=2>
+            {{stay.secondStayInfo}}
+        </span>
+    </div>
+    <div
+    fxFlexOffset=2
+    fxLayout=row
+    *ngIf="stay.thirdStayInfo"
+    class="propertyAndvantages">
+        <span 
+        class="material-icons material-icons-outlined advantage-icon">
+            {{getAdvantagePropertyIcon(stay.thirdStayInfo)}}
+        </span>
+        <span
+        fxFlexOffset=2>
+            {{stay.thirdStayInfo}}
+        </span>
+    </div>
+    <div
+    fxFlexOffset=2
+    class="advantage-container"
+    fxLayout=row>
+        <ng-container
+        *ngFor="let advantage of stay.advantages">
+            <div
+            fxLayout=row
+            class="advantage-wrap">
+                <span 
+                class="material-icons material-icons-outlined advantage-icon">
+                    {{ getAdvantageIcon(advantage) }}
+                </span>
+                <span
+                fxFlexOffset=2
+                class="advantage-text">
+                    {{advantage}}
+                </span>
+            </div>
+        </ng-container>
+    </div>
+    <div
+    fxFlexOffset=2
+    fxLayout=row
+    class="tip-wrapper"
+    *ngIf="stay.tip">
+        <img 
+        class="light"
+        src="https://www.flaticon.com/svg/static/icons/svg/2910/2910914.svg" 
+        alt="">
+        <span>
+            {{stay.tip}}
+        </span>
+    </div>
+    <div
+    fxFlexOffset=2
+    fxFlexAlign=end
+    fxLayout=row>
+        <div
+        fxFlex=100
+        fxLayout=column>
+            <span
+            class="normal-bold">
+                Price for {{numberOfNights}} nights
+            </span>
+            <span
+            class="sumPrice">
+                € {{sumPrice}}
+            </span>
+            <span
+            class="description">
+                Includes taxes and charges
+            </span>
+        </div>
+    </div>
+    <div
+    class="btn-select-wrapper"
+    fxLayout=row>
+        <button 
+        *ngIf="!isSelectedItem"
+        fxFlex=100
+        class="btn-select"
+        mat-stroked-button
+        (click)="selectRoom()">SELECT</button>
+        <div
+        *ngIf="isSelectedItem"
+        fxLayout=row
+        fxFlex=100
+        class="selected-wrapper">
+            <button 
+            class="btn-room-selected"
+            mat-stroked-button
+            [matMenuTriggerFor]="menu"
+            (click)="showMenu()">
+                <mat-icon 
+                class="button-icon-arrow-bottom material-icons-outlined">
+                keyboard_arrow_down</mat-icon>
+                1 room selected
+            </button>
+            <mat-menu #menu="matMenu">
+                <button class='remove-item'
+                (click)="removeRoom()"
+                mat-menu-item>Remove</button>
+                <button mat-menu-item>1 apartment</button>
+              </mat-menu>
+            <button 
+            class="btn-x"
+            mat-stroked-button
+            (click)="removeRoom()">x</button>
+            
+        </div>
+        
+    </div>
+</div>

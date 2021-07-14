@@ -1,0 +1,102 @@
+.background-item{
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.2)
+}
+.accomodation-photo{
+    object-fit: cover;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+h4{
+    margin-bottom: 0;
+}
+.star-container,
+.distance-container,
+.rate-container,
+.cleanliness-container{
+    align-items: center;
+    display: flex;
+}
+.material-icons-round{
+    font-size: 1.2em;
+}
+.yellow-icon{
+    color: #ffbc00!important;
+}
+.white-icon{
+    font-size: 0.8em;
+    color: white;
+    background-color: #ffbc00;
+    padding: 3px;
+    border-radius: 2px;
+}
+.rate-back{
+    width: 2em;
+    background-color: #0346a5;
+    border-radius: 6px;
+    border-bottom-left-radius: 0;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3em 0;
+}
+.icon-container{
+    width: 2em;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+}
+.rate{
+    color: white;
+    font-family: inherit;
+}
+.cleanliness-img{
+    width: 24px;
+    height: 24px;
+}
+.price{
+    font-weight: 500;
+    font-size: 1.5em;
+    color: green;
+}
+.prepayment{
+    font-size: 0.9em;
+}
+.bottom-right-container{
+    display: flex;
+    align-items: flex-end;
+    align-self: flex-end;
+}
+@media only screen and (min-width: 768px){
+    .background-item > div > div > h4{
+        font-size: 1.1em;
+    }
+    .material-icons-round{
+        font-size: 1.4em;
+    }
+    .rate-back{
+        font: 2.1em;
+    }
+    .rate-container > span,
+    .bottom-right-container > div:nth-child(1) > span {
+        font-size: 1.1em;
+    }
+    .bottom-right-container > div:nth-last-child(-n+2){
+        font-size: 1em;
+    }
+    .price{
+        font-size: 1.6em;
+    }
+    div.distance-container > div > i {
+        font-size: 28px;
+    }
+    div.cleanliness-container > div > img{
+        width: 28px;
+        height: 28px;
+    }
+    span.description{
+        font-size: 1em;
+    }
+}

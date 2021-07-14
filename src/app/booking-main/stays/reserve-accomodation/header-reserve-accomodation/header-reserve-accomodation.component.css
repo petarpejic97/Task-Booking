@@ -1,0 +1,93 @@
+.header-background{
+    background-color: var(--dark-blue);
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+}
+.content-wrapper{
+    margin-top: 1.5em;
+    min-height: 3rem;
+}
+.back-icon-white,
+.reserveAcc{
+    color: white;
+}
+.reserveAcc{
+    font-size: large;
+    font-weight: 500;
+}
+.stepper-wrapper{
+    width: 80vw;
+}
+.mat-stepper-horizontal {
+    background-color: var(--dark-blue);
+}
+::ng-deep .mat-horizontal-stepper-header-container{
+    width: 10em!important;
+    margin-left: -4px;
+}
+::ng-deep .mat-horizontal-stepper-header{
+    padding: 0!important;
+    height: fit-content!important;
+}
+::ng-deep .mat-stepper-horizontal-line {
+    border-top-color: white!important;
+    margin: unset!important; 
+    min-width: unset!important;
+}
+::ng-deep [aria-posinset="1"] > .mat-step-icon, 
+::ng-deep [aria-posinset="2"] > .mat-step-icon, 
+::ng-deep [aria-posinset="3"] > .mat-step-icon {
+    height: .8em!important;
+    width: .8em!important;
+    margin-left: 4px!important;
+    margin-right: 4px!important;
+}
+::ng-deep [aria-posinset="4"] > .mat-step-icon {
+    height: 1.1em!important;
+    width: 1.1em!important;
+    margin-left: 4px!important;
+    margin-right: 4px!important;
+    background-color: white!important;
+}
+::ng-deep .mat-step-header{
+    width: fit-content!important;
+}
+::ng-deep .mat-step-label{
+    display: none!important;
+}
+::ng-deep .mat-horizontal-content-container {
+    padding: 0!important;
+    padding-bottom: 4%!important;
+}
+::ng-deep .mat-step-icon-content > span{
+    display: none;
+}
+::ng-deep .mat-step-icon-selected{
+    background-color: green!important;
+}
+::ng-deep .mat-step-header .mat-step-icon-state-edit {
+    background-color: #6a74afab;
+}
+::ng-deep .mat-step-header .mat-step-icon {
+    background-color: #6a74afab;
+}
+::ng-deep .mat-stepper-horizontal-line {
+    border-top-width: 2px!important;
+}
+@media only screen and (min-width: 768px){
+    .reserveAcc{
+        font-size: 1.4em;
+    }
+    ::ng-deep [aria-posinset="1"] > .mat-step-icon, 
+    ::ng-deep [aria-posinset="2"] > .mat-step-icon, 
+    ::ng-deep [aria-posinset="3"] > .mat-step-icon {
+        height: 1em!important;
+        width: 1em!important;
+        margin-left: 6px!important;
+        margin-right: 6px!important;
+    }
+    ::ng-deep .mat-horizontal-stepper-header-container{
+        width: 12em!important;
+    }
+}

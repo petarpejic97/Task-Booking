@@ -1,0 +1,95 @@
+<div
+fxLayout=column
+class="background">
+    <div
+    fxFlexOffset=5
+    fxLayout="row">
+        <span 
+        fxFlexOffset=5
+        class="material-icons back-icon-white"
+        routerLink='..'>
+            arrow_back
+        </span>
+        <h3 
+        fxFlexOffset=5
+        class="connwithface">
+            Connect with Facebook
+        </h3>
+    </div>
+    <div
+    fxLayout="row">
+        <span
+        fxFlexOffset=5
+        fxFlex=90
+        class="enterpass">Enter yout Booking.com password to connect it with yout Facebook account. You only need to do this once.
+        </span>
+    </div>
+
+    <div
+    fxFlexOffset=5
+    fxLayout=row>
+        <div
+        class="form-background-wrapper"
+        fxLayout=column
+        fxFlex=90
+        fxFlexOffset=5>
+            <div
+            fxLayout=column
+            fxFlexOffset=5>
+                <div
+                fxLayout=row>
+                    <form 
+                    action=""
+                    fxLayout=column
+                    fxFlexOffset=5
+                    fxFlex=90>
+                        <div
+                        fxLayout=row>
+                            <mat-form-field
+                            floatLabel="never"
+                            class="input"
+                            fxFlex=100>
+                                <input  matInput [(ngModel)]="email" name="email" placeholder="Email">
+                            </mat-form-field>
+                        </div>
+                        
+                        <div
+                        fxLayout=row>
+                            <mat-form-field 
+                            fxFlex=100
+                            floatLabel="never">
+                                <input matInput [(ngModel)]="password" name="password" placeholder="Password">
+                            </mat-form-field>
+                        </div>
+                        <div
+                        fxLayout=row>
+                            <mat-checkbox 
+                            class="checkbox-showPassword">Show Password
+                            </mat-checkbox>
+                        </div>
+                    </form>       
+                </div>
+            </div>
+        </div>
+    </div>
+    <div
+        fxLayout="row"
+        fxFlexOffset=3>
+        <button
+        fxFlexOffset="5"
+        fxFlex="90"
+        class="btnConnect" mat-raised-button disabled>
+            <span class="buttontext"> Connect</span>
+        </button>
+    </div>
+    <div
+    fxLayout=row
+    fxFlexOffset=3>
+        <span
+        fxFlexOffset=5
+        fxFlex=90
+        class="forgotPassword">Forgot password?</span>
+    </div>
+</div>
+
+

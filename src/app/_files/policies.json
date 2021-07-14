@@ -1,0 +1,58 @@
+[
+    {
+      "icon": "alarm",
+      "title": "Check-in/Check-out times",
+      "description": "Check-in from 14:00 until 22:00 \n Check-out from 05:00 until 11:00"
+    },
+    {
+        "icon": "vpn_key",
+        "title": "Arrival at the property",
+        "description": "Your host will meet you at the property to let you in."
+    },
+    {
+        "icon": "local_parking",
+        "title": "Parking",
+        "description": "Free private parking is available at a location nearby (reservation is needed)."
+    },
+    {
+        "icon": "wifi",
+        "title": "Internet",
+        "description": "WiFi is available in all areas and is free of charge."
+    },
+    {
+        "icon": "perm_identity",
+        "title": "Age restriction",
+        "description": "There's no age requirement for check-in"
+    },
+    {
+        "icon": "schedule",
+        "title": "No Curfew",
+        "description": "Come and go whenever you want"
+    },
+    {
+      "icon": "pets",
+      "title": "Pets",
+      "description": "Pets are not allowed."
+    },
+    
+    {
+        "icon": "lock",
+        "title": "Authorization",
+        "description": "The property reserves the right to pre-authorize credit cards prior to arrival."
+    },
+    {
+        "icon": "credit_card",
+        "title": "Accepted Credit Cards",
+        "description": "No credit cards accepted, only cash"
+    },
+    {
+        "icon": "restaurant",
+        "title": "Parties",
+        "description": "Parties/events are not allowed"
+    },
+    {
+        "icon": "brightness_3",
+        "title": "Quiet hours",
+        "description": "Quiet hours are between 10:00 PM and 10:00 AM"
+    }
+  ]

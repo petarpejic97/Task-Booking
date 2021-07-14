@@ -1,0 +1,36 @@
+[
+    {
+      "icon": "health_and_safety",
+      "title": "Safety features",
+      "description": [
+          "Staff follow all safety protocols of local authorities",
+          "There is a hand sanitizer in the guest accommodation and in the main rooms",
+          "A first aid kit is available",
+          "Availability of professional medical staff"
+      ]
+    },
+    {
+        "icon": "transfer_within_a_station",
+        "title": "Physical distancing",
+        "description": [
+            "Single-room AC for guest accommodation (all rooms)"
+        ]
+    },
+    {
+        "icon": "sanitizer",
+        "title": "Cleanliness and disinfection",
+        "description": [
+            "Use of anti-coronavirus cleaners",
+            "Washing bed linen, towels and laundry in accordance with local government guidelines",
+            "Guest accommodation is disinfected between guest stays", 
+            "Guest accommodation is sealed after cleaning"
+        ]
+    },
+    {
+        "icon": "fastfood",
+        "title": "Food & drink safety",
+        "description": [
+            "All plates, cutelery, glasses, and other tableware sanitzed"
+        ]
+    }
+  ]

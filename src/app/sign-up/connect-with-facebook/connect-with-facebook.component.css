@@ -1,0 +1,38 @@
+.background{
+    height: 100vh;
+    display: flex;
+}
+.back-icon-white, .connwithface, .enterpass{
+    color: white;
+}
+.enterpass{
+    text-align: center;
+}
+.checkbox-showPassword{
+    padding-bottom: 5%;
+    margin-top: -5%;
+}
+.form-background-wrapper{
+    background-color: white;
+    border-radius: 3px;
+}
+.btnConnect{
+    height: 3em;
+    border:none;
+    color: white;
+    background-color: #4267B2;;
+}
+::ng-deep .mat-form-field-infix{
+    border-top-width: 0;
+}
+button[disabled]{
+  background-color: #d5dbe8!important;
+  color: white!important;
+}
+::ng-deep .mat-checkbox-checked .mat-checkbox-background{
+    background-color: #4267B2!important;
+}
+.forgotPassword{
+    text-align: center;
+    color: white;
+}

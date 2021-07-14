@@ -1,0 +1,36 @@
+.footer-reserve{
+    background-color: white;
+    height: 3.8rem;
+    padding: 2% 4%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px rgb(204, 204, 204) solid;
+}
+.footer-content-wrapper{
+    justify-content: space-between;
+    align-items: center;
+}
+.fit-subtext{
+    font-size: smaller;
+}
+
+.btn-next-step-wrapper{
+    width: 60%!important;
+    height: 3.5em;
+}
+.btn-next-step{
+    background-color: #4267B2;
+    color: white;
+    border-radius: 2px;
+    box-shadow: none;
+    height: -webkit-fill-available;
+}
+@media only screen and (min-width: 768px){
+    .normal-bold{
+        font-size: 1.1em;
+    }
+    .fit-subtext{
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,260 @@
+<div
+fxLayout=column>
+    <div
+    class="header-background"
+    fxLayout="row"
+    fxFlex=100>
+        <div 
+        class="content-wrapper"
+        fxLayout=row
+        fxFlex=90
+        fxFlexOffset=5>
+            <div
+            class="back-arrow-container"
+            (click)=back()>
+                <span 
+                class="material-icons back-icon-white">
+                    arrow_back
+                </span>
+            </div>
+            <div
+            fxFlexOffset=8>
+                <span class="accTitle">{{ accomodation.title }}</span><br>
+            </div>
+        </div>
+    </div>
+    <div
+    fxLayout=column
+    class="tab-container">
+        <mat-tab-group  [(selectedIndex)]="selectedTab" mat-align-tabs="start">
+            <mat-tab label="DESCRIPTION">
+                {{ accomodation.title }} is located in Split, just a 5-minute walk from the UNESCO-protected Diocletian's Palace. <br> New and renovated apartments are decorated with a combination of luxury and traditional details. Air conditioning and Wi-Fi are available. Bačvice Beach is a 15-minute walk away. <br> <br>
+                All accommodation units feature a seating area with a flat-screen cable TV. Modern spaces and exposed stone walls create a luxurious and traditional atmosphere, a kitchenette and a bathroom equipped with contemporary amenities.<br> <br>
+                The nearest restaurant is a 5-minute walk away, and many other bars, shops, galleries and restaurants can be found in the Old Town of Split. Marmontova Street is full of shops and is only a few steps away.<br> <br>
+                There is a diving center in Bačvice, a playground is a 15-minute walk away. Marjan Forest Park is located nearby and offers many opportunities for hiking and picnics.<br> <br>
+                The Main Bus and Train Stations and Split Ferry Port, with daily lines to nearby islands, are only 700 meters away. Split Airport is less than 25 km from the resort. Free parking is available near the property.<br> <br>
+            </mat-tab>
+            <mat-tab label="FACILITIES">
+                <div
+                fxLayout=column>
+                    <div
+                    fxLayout=column>
+                        <div
+                        *ngFor="let facility of facilities"
+                        fxLayout=row>
+                            <div
+                            fxFlex=100
+                            fxLayout=column
+                            class="facility-item">
+                                <div
+                                fxLayout=row
+                                fxFlexOffset=4>
+                                    <span
+                                    class="material-icons-outlined facility-icon">
+                                        {{facility.icon}}
+                                    </span>
+                                    <div
+                                    fxFlexOffset=4
+                                    fxLayout=column
+                                    >
+                                        <span
+                                        class="facility-title">{{facility.title}}</span>
+                                        <span
+                                        fxFlexOffset=4>{{facility.description}}</span>
+                                    </div>
+                                </div>
+                                <hr
+                                fxFlexOffset=4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </mat-tab>
+            <mat-tab label="HEALTH & HYGIENE">
+                <div
+                fxLayout=column>
+                    <div
+                    fxLayout=column>
+                        <div
+                        *ngFor="let healt of health"
+                        fxLayout=row>
+                            <div
+                            fxFlex=100
+                            fxLayout=column
+                            class="healt-item">
+                                <div
+                                fxLayout=row
+                                fxFlexOffset=4>
+                                    <span
+                                    class="material-icons-outlined healt-icon">
+                                        {{healt.icon}}
+                                    </span>
+                                    <div
+                                    fxFlexOffset=4
+                                    fxLayout=column>
+                                        <span
+                                        class="healt-title">{{healt.title}}</span>
+                                        <div>
+                                            <ul
+                                            class="health-list">
+                                                <li
+                                                *ngFor="let desc of healt.description">
+                                                    {{desc}}
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr
+                                fxFlexOffset=4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </mat-tab>
+            <mat-tab label="SUSTAINABILITY INITIATIVES">
+                <div
+                fxLayout=column>
+                    <span>
+                        These are some of the steps taken to provide more environmentally friendly travel:
+                    </span>
+                    <span
+                    fxFlexOffset=4>
+                        <b>We Do provide</b>
+                    </span>
+                    <div
+                    fxFlexOffset=4
+                    fxLayout=row>
+                        <span
+                        class="material-icons-outlined">
+                            spa
+                        </span>
+                        <div
+                        fxFlexOffset=4
+                        fxLayout=column>
+                            <span
+                            fxFlexOffser=2><b>Water-saving options:</b></span>
+                            <span
+                            fxFlexOffser=2>option to reuse towels</span>
+                        </div>
+                    </div>
+                    <div
+                    fxFlexOffset=4
+                    fxLayout=row>
+                        <span
+                        class="material-icons-outlined">
+                            electrical_services
+                        </span>
+                        <div
+                        fxFlexOffset=4
+                        fxLayout=column>
+                            <span
+                            fxFlexOffser=2><b>Energy efficiency measures:</b></span>
+                            <span
+                            fxFlexOffser=2>key card or motion-controller electricity</span>
+                        </div>
+                    </div>
+                </div>
+            </mat-tab>
+            <mat-tab label="POLICIES">
+                <span
+                class="policies-subtitle">
+                    These are general house rules for IME APARTMANA. They might vary per apartment, so be sure to check individual descriptions.
+                </span>
+                <div
+                fxLayout=column>
+                    <div
+                    fxLayout=column>
+                        <div
+                        *ngFor="let politcy of policies"
+                        fxLayout=row>
+                            <div
+                            fxFlex=100
+                            fxLayout=column
+                            class="politcy-item">
+                                <div
+                                fxLayout=row
+                                fxFlexOffset=4>
+                                    <span
+                                    class="material-icons-outlined politcy-icon">
+                                        {{politcy.icon}}
+                                    </span>
+                                    <div
+                                    fxFlexOffset=4
+                                    fxLayout=column
+                                    >
+                                        <span
+                                        class="policy-title">{{politcy.title}}</span>
+                                        <span
+                                        fxFlexOffset=4>{{politcy.description}}</span>
+                                    </div>
+                                </div>
+                                <hr
+                                fxFlexOffset=4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </mat-tab>
+            <mat-tab label="CHILDREN AND EXTRA BEDS">
+                <div
+                fxLayout=column>
+                    <span
+                    class="normal-bold">Child policies</span>
+                    <span
+                    fxFlexOffset=4>Children of all ages are welcome.</span>
+                    <span
+                    fxFlexOffset=4>Children aged 6 and over are considered adults in this property.</span>
+                    <span
+                    class="normal-bold"
+                    fxFlexOffset=4>To see the exact prices and capacity information, add the number of children traveling with you and their age to your search.</span>
+                    <span
+                    class="normal-bold"
+                    fxFlexOffset=4>Crib and extra bed policies</span>
+                    <table
+                    fxFlexOffset=4>
+                        <thead>
+                          <tr>
+                            <th
+                            class="table-title">0-2 years old</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Crib by request</td>
+                            <td
+                            class="free-text">Free</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                    <span
+                    fxFlexOffset=4>Additional fees are not calculated automatically in the total cost and will have to be paid for separately during your stay.</span>
+                    <span
+                    fxFlexOffset=4>The maximum number of cribs, extra beds and children allowed in existing beds can vary depending on the option booked</span>
+                    <span
+                    fxFlexOffset=4>All Cribs and extra beds are subject to availability.</span>
+                    <span
+                    fxFlexOffset=4>No capacity for extra beds</span>
+                </div>
+            </mat-tab>
+            <mat-tab label="IMPORTANT INFORMATION">
+                <div
+                fxLayout=column>
+                    <span>
+                        Please inform {{ accomodation.title }} in advance of your expected arrival time. They can make a note in the Special Requests box when booking, or contact the property directly using the contact details found on the booking confirmation. <br>
+                        Boys ', girls' and similar parties cannot be held in this facility. <br>
+                        Due to coronavirus (COVID-19), additional safety and hygiene measures are currently being implemented in this facility.
+                    </span>
+                    <span
+                    fxFlexOffset=4
+                    class="normal-bold">Private host</span>
+                    <span>
+                        Hosts who have registered on Booking.com as natural persons are parties who rent their facility or facilities without it being their profession or profession. They are not professional renters (such as global hotel chains) and therefore may not be subject to the same EU consumer protection laws. But don’t worry, Booking.com provides you with the same customer support for every stay. This does not mean that your stay or experience will be different from booking accommodation with a professional landlord.
+                    </span>
+                </div>
+            </mat-tab>
+      </mat-tab-group>
+      
+    </div>
+</div>
